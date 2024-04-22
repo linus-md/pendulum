@@ -1,0 +1,5 @@
+/home/mathexp/lsommer/miniforge3/envs/sage/bin/python: Error while finding module specification for 'systems/kepler/kepler_simple.py' (ModuleNotFoundError: No module named 'systems/kepler/kepler_simple'). Try using 'systems/kepler/kepler_simple' instead of 'systems/kepler/kepler_simple.py' as the module name.
+
+real	0m0.097s
+user	0m0.017s
+sys	0m0.012s
