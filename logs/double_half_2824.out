@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/mathexp/lsommer/code/pendulum/systems/pendulum/double_half.py", line 20, in <module>
+    from core.main import algorithm
+ModuleNotFoundError: No module named 'core'
+
+real	0m4.138s
+user	0m4.694s
+sys	0m0.427s
