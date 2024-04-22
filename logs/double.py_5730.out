@@ -1,0 +1,5 @@
+/home/mathexp/lsommer/miniforge3/envs/sage/bin/python: Error while finding module specification for 'double.py' (ModuleNotFoundError: No module named 'double'). Try using 'double' instead of 'double.py' as the module name.
+
+real	0m0.095s
+user	0m0.020s
+sys	0m0.010s

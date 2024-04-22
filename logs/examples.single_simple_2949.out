@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/mathexp/lsommer/pendulum/examples/single_simple.py", line 1, in <module>
+    from core.main import algorithm
+  File "/home/mathexp/lsommer/pendulum/core/__init__.py", line 3, in <module>
+    from .main import algorithm
+  File "/home/mathexp/lsommer/pendulum/core/main.py", line 2, in <module>
+    from sage.rings.ideal import Ideal as ideal
+  File "/home/mathexp/lsommer/miniforge3/envs/sage/lib/python3.11/site-packages/sage/rings/ideal.py", line 31, in <module>
+    from sage.categories.rings import Rings
+  File "/home/mathexp/lsommer/miniforge3/envs/sage/lib/python3.11/site-packages/sage/categories/rings.py", line 17, in <module>
+    from sage.categories.category_with_axiom import CategoryWithAxiom
+  File "/home/mathexp/lsommer/miniforge3/envs/sage/lib/python3.11/site-packages/sage/categories/category_with_axiom.py", line 1664, in <module>
+    from sage.categories.category import Category
+  File "/home/mathexp/lsommer/miniforge3/envs/sage/lib/python3.11/site-packages/sage/categories/category.py", line 108, in <module>
+    from sage.misc.c3_controlled import _cmp_key, _cmp_key_named, C3_sorted_merge
+  File "sage/misc/c3_controlled.pyx", line 368, in init sage.misc.c3_controlled (build/cythonized/sage/misc/c3_controlled.c:15689)
+  File "/home/mathexp/lsommer/miniforge3/envs/sage/lib/python3.11/site-packages/sage/structure/__init__.py", line 2, in <module>
+    import sage.structure.element
+  File "sage/structure/element.pyx", line 1, in init sage.structure.element (build/cythonized/sage/structure/element.c:46864)
+  File "sage/structure/category_object.pyx", line 61, in init sage.structure.category_object (build/cythonized/sage/structure/category_object.c:12717)
+ImportError: cannot import name Category
+
+real	0m0.350s
+user	0m0.090s
+sys	0m0.040s
