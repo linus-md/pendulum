@@ -11,6 +11,11 @@ def test_simple_double_pendulum():
     assert len(qi) == 2
     assert len(pi) == 2*2 + 2*2
 
+def test_half_double_pendulum():
+    qi, pi = systems.double_half()
+    assert len(qi) == 2
+    assert len(pi) == 2*2 + 2*2 + 1
+
 def test_full_double_pendulum():
     qi, pi = systems.double_full()
     assert len(qi) == 2
