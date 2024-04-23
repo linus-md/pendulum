@@ -10,4 +10,5 @@ from .pendulum.triple_full import triple_full
 from .pendulum.triple_full_g import triple_full_g
 
 from .kepler.kepler_simple import kepler_simple
+from .kepler.kepler_half import kepler_half
 from .kepler.kepler_full import kepler_full

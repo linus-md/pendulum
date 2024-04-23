@@ -46,6 +46,11 @@ def test_simple_kepler():
     assert len(qi) == 1
     assert len(pi) == 5
 
+def test_half_kepler():
+    qi, pi = systems.kepler_half()
+    assert len(qi) == 2
+    assert len(pi) == 10
+
 def test_full_kepler():
     qi, pi = systems.kepler_full()
     assert len(qi) == 2
