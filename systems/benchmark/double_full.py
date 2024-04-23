@@ -18,7 +18,7 @@ def double_full():
     return qi, pi
 
 if __name__ == '__main__':
-    from core.main import algorithm, algorithm_0
+    from core.main import algorithm
     qi, pi = double_full()
-    result = algorithm_0(qi, pi)
+    result = algorithm(qi, pi)
     print(result)
