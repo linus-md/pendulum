@@ -50,3 +50,18 @@ def test_full_kepler():
     qi, pi = systems.kepler_full()
     assert len(qi) == 2
     assert len(pi) == 11
+
+def test_chem_1():
+    qi, pi = systems.chem_1()
+    assert len(qi) == 1
+    assert len(pi) == 4 + 3
+
+def test_chem_4():
+    qi, pi = systems.chem_4()
+    assert len(qi) == 2
+    assert len(pi) == 6 + 6
+
+def test_chem_b2():
+    qi, pi = systems.chem_b2()
+    assert len(qi) == 2
+    assert len(pi) == 7 + 10
