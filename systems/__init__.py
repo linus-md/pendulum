@@ -1,6 +1,6 @@
 from .benchmark.single import single
-from .benchmark.double_simple import double_simple
-from .benchmark.double_full import double_full
+from .benchmark.double import double
+from .benchmark.double_ll import double_ll
 from .benchmark.kepler_simple import kepler_simple
 from .benchmark.kepler_half import kepler_half
 

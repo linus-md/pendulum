@@ -1,10 +1,11 @@
 import logging
 import datetime
 
-from sage.all import ideal
+from sage.all import ideal, set_verbose
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+set_verbose(2)
 
 def diff_op(qi, pi):
     vars = qi.parent().gens()
