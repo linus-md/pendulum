@@ -6,17 +6,17 @@ import subprocess
 def create_and_run_sh(filename):
     time = datetime.datetime.now().strftime("%M%S")
     script_path = f'slurm_{time}.sh'
-
+ 
     script_content = f"""#!/bin/bash --login
-#SBATCH --job-name={filename}_{time}
-#SBATCH --output=logs/{filename}_{time}.out
+#SBATCH --job-name={filename.split('/')[-1][:-3]}_{time}
+#SBATCH --output=logs/{filename.split('/')[-1][:-3]}_{time}.out
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=32
 #SBATCH --mem=64GB
-#SBATCH --time=7-00:00:00
+#SBATCH --time=7-0:00
 mamba activate sage
-time python -m {filename}
+time python {filename}
 """
 
     with open(script_path, 'w') as script_file:
