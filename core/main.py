@@ -11,7 +11,7 @@ def diff_op(qi, pi):
     vars = qi.parent().gens()
     return sum([pi[i] * qi.derivative(var) for i, var in enumerate(vars)])
 
-def algorithm(qi, pi, method='std'):
+def algorithm(qi, pi, method=None):
     i = 0
     logger.info('Algorithm 1 started')
     logger.info(f'Iteration {i}')
