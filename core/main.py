@@ -51,4 +51,5 @@ def algorithm_0(qi, pi):
             logger.info(f'Iteration {i} - {datetime.datetime.now()}')
             logger.info(I)
         else:
+            # This gets computed eventhough we compute it for the reduction above...
             return ideal(I).groebner_basis()
