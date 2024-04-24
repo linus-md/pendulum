@@ -12,10 +12,10 @@ def diff_op(qi, pi):
     return sum([pi[i] * qi.derivative(var) for i, var in enumerate(vars)])
 
 def algorithm(qi, pi):
-    G = ideal(qi).groebner_basis()
     i = 0
-    logger.info(f'{datetime.datetime.now()}')
     logger.info(f'Iteration {i}')
+    logger.info(f'{datetime.datetime.now()}')
+    G = ideal(qi).groebner_basis()
     logger.info(G)
     logger.info('')
 
@@ -25,19 +25,16 @@ def algorithm(qi, pi):
 
         if any(qs != 0 for qs in qi):
             i += 1
+            logger.info(f'Iteration {i} - {datetime.datetime.now()}')
             G = ideal(list(set(G + qi))).groebner_basis()
-            logger.info(f'{datetime.datetime.now()}')
-            logger.info(f'Iteration {i}')
             logger.info(G)
-            logger.info('')
         else:
             return G
 
 def algorithm_0(qi, pi):
     I = ideal(qi)  
     i = 0
-    logger.info(f'{datetime.datetime.now()}')
-    logger.info(f'Iteration {i}')
+    logger.info(f'Iteration {i} - {datetime.datetime.now()}')
     logger.info(I)
     logger.info('')
 
@@ -48,9 +45,8 @@ def algorithm_0(qi, pi):
         if any(qs != 0 for qs in qi):
             i += 1
             I = I + ideal(qi)
-            logger.info(f'{datetime.datetime.now()}')
-            logger.info(f'Iteration {i}')
+            logger.info(f'')
+            logger.info(f'Iteration {i} - {datetime.datetime.now()}')
             logger.info(I)
-            logger.info('')
         else:
             return ideal(I).groebner_basis()
