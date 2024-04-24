@@ -23,6 +23,13 @@ def chem_4():
 
 if __name__ == '__main__':
     from core.main import algorithm
+    import time
+    
     qi, pi = chem_4()
+    start_time = time.time()
     result = algorithm(qi, pi)
+    end_time = time.time()
+
+    execution_time = end_time - start_time
+    print("Execution time:", execution_time, "seconds")
     print(result)
