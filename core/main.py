@@ -13,6 +13,7 @@ def diff_op(qi, pi):
 
 def algorithm(qi, pi, method='std'):
     i = 0
+    logger.info('Algorithm 1 started')
     logger.info(f'Iteration {i}')
     logger.info(f'{datetime.datetime.now()}')
     G = ideal(qi).groebner_basis(method)
@@ -34,6 +35,7 @@ def algorithm(qi, pi, method='std'):
 def algorithm_0(qi, pi):
     I = ideal(qi)  
     i = 0
+    logger.info('Algorithm 0 started')
     logger.info(f'Iteration {i} - {datetime.datetime.now()}')
     logger.info(I)
     logger.info('')
