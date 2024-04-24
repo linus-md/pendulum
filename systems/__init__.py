@@ -15,3 +15,4 @@ from .hard.triple_full import triple_full
 from .hard.triple_full_g import triple_full_g
 from .hard.double_full_g import double_full_g
 from .hard.kepler_full import kepler_full
+from .hard.chem_reduced_erk import reduced_erk
