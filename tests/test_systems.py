@@ -69,4 +69,4 @@ def test_chem_b2():
 def test_chem_erk_reduced():
     qi, pi = systems.reduced_erk()
     assert len(qi) == 3
-    assert len(pi) == 10 + 4 + 1 + 3 +1
+    assert len(pi) == 10 + 4 + 1 + 4 +1
