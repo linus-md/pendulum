@@ -39,6 +39,7 @@ def algorithm_0(qi, pi):
     logger.info(f'{datetime.datetime.now()}')
     logger.info(f'Iteration {i}')
     logger.info(I)
+    logger.info('')
 
     while True:
         qi = [diff_op(qs, pi) for qs in qi]
