@@ -11,11 +11,11 @@ def diff_op(qi, pi):
     vars = qi.parent().gens()
     return sum([pi[i] * qi.derivative(var) for i, var in enumerate(vars)])
 
-def algorithm(qi, pi, method='singular:std'):
+def algorithm(qi, pi):
     i = 0
     logger.info('Algorithm 1 started')
     logger.info(f'Iteration {i} - {datetime.datetime.now()}')
-    G = ideal(qi).groebner_basis(method)
+    G = ideal(qi).groebner_basis()
     # logger.info(G)
     logger.info('')
 
@@ -26,7 +26,7 @@ def algorithm(qi, pi, method='singular:std'):
         if any(qs != 0 for qs in qi):
             i += 1
             logger.info(f'Iteration {i} - {datetime.datetime.now()}')
-            G = ideal(list(set(G + qi))).groebner_basis(method)
+            G = ideal(list(set(G + qi))).groebner_basis()
             # logger.info(G)
         else:
             return G
