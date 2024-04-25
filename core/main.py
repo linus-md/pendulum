@@ -14,10 +14,9 @@ def diff_op(qi, pi):
 def algorithm(qi, pi, method='singular:std'):
     i = 0
     logger.info('Algorithm 1 started')
-    logger.info(f'Iteration {i}')
-    logger.info(f'{datetime.datetime.now()}')
+    logger.info(f'Iteration {i} - {datetime.datetime.now()}')
     G = ideal(qi).groebner_basis(method)
-    logger.info(G)
+    # logger.info(G)
     logger.info('')
 
     while True:
@@ -27,8 +26,8 @@ def algorithm(qi, pi, method='singular:std'):
         if any(qs != 0 for qs in qi):
             i += 1
             logger.info(f'Iteration {i} - {datetime.datetime.now()}')
-            G = ideal(list(set(G + qi))).groebner_basis()
-            logger.info(G)
+            G = ideal(list(set(G + qi))).groebner_basis(method)
+            # logger.info(G)
         else:
             return G
 
@@ -49,7 +48,18 @@ def algorithm_0(qi, pi):
             I = I + ideal(qi)
             logger.info(f'')
             logger.info(f'Iteration {i} - {datetime.datetime.now()}')
-            logger.info(I)
+            # logger.info(I)
         else:
             # This gets computed eventhough we compute it for the reduction above...
             return ideal(I).groebner_basis()
+
+if __name__ == '__main__':
+    from systems import chem_fake, double, single
+    from sage.all import PolynomialRing, QQ
+    
+    time = datetime.datetime.now()
+    qi, pi = chem_fake()
+    res = algorithm(qi, pi)
+    
+    print(res)
+    print(f"{(datetime.datetime.now() - time).total_seconds()}s")
