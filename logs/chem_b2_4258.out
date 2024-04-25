@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/mathexp/lsommer/code/pendulum/systems/benchmark/chem_b2.py", line 22, in <module>
-    from core.main import algorithm
-ModuleNotFoundError: No module named 'core'
-
-real	0m4.043s
-user	0m4.861s
-sys	0m0.386s

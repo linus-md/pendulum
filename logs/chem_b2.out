@@ -1,0 +1,14 @@
+INFO:core.main:Algorithm 1 started
+INFO:core.main:Iteration 0
+INFO:core.main:2024-04-24 23:43:48.464878
+if(defined(sage16)){kill sage16;};if(defined(sage17)){kill sage17;};def sage18=std(sage15);
+[65535:6]1ss
+(S:1)-
+product criterion:1 chain criterion:0
+> INFO:core.main:[x1 + x7 - 1, x2 + x5 - 1]
+
+[x1 + x7 - 1, x2 + x5 - 1]
+
+real	0m4.367s
+user	0m4.823s
+sys	0m0.470s

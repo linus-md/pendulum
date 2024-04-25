@@ -34,7 +34,6 @@ def parse(log):
     sub_strings = [log[pos[i]:pos[i+1]] for i in range(len(pos)-1)]
     sub_strings.append(log[pos[-1]:])
 
-    print("Substrings:", sub_strings)
 
     # Evalute each substring
     vals = []
