@@ -16,6 +16,7 @@ def create_and_run_sh(filename):
 #SBATCH --mem=64GB
 #SBATCH --time=7-0:00
 mamba activate sage
+export PYTHONPATH="${{PYTHONPATH}}:/home/mathexp/lsommer/code/pendulum"
 time python {filename}
 """
 
