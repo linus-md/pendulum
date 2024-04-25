@@ -7,7 +7,7 @@ def chem_4():
                        order='degrevlex')
     pi = [R('- k1*x1 + k4*x3*x5'),    
           R('  k1*x1 - k2*x2 + k5*x4*x5'),
-          R('- k3*x3 + k2*x2 + k4*x3*x5'),
+          R('- k3*x3 + k2*x2 - k4*x3*x5'), # used to be k3*x3 - k2*x2 + k4*x3*x5 ....
           R('  k3*x3 - k5*x4*x5'),
           R('- k4*x3*x5 - k5*x4*x5 + k6*x6'),
           R('  k4*x3*x5 - k6*x6 + k5*x4*x5'),
@@ -18,7 +18,7 @@ def chem_4():
           R('0'),
           R('0')]
 
-    qi = [R('x1 + x2 + x3 + x4 - 1'), R('x5 + x6 - 1')]
+    qi = [R('x1 + x2 + x3 - x4 - 1'), R('x5 + x6 - 1')]
     return qi, pi
 
 if __name__ == '__main__':
@@ -34,4 +34,4 @@ if __name__ == '__main__':
     print("Execution time:", execution_time, "seconds")
     print(result)
 
-    # Execution time: 414.9023480415344 seconds
+    # Execution time for "wrong" example: 414.9023480415344 seconds
