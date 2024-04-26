@@ -48,9 +48,7 @@ def algorithm_0_msolve(qi, pi):
             return I.groebner_basis(algorithm='msolve', proof=False)
 
 if __name__ == '__main__':
-    from systems import chem_fake, double
-    from sage.all import PolynomialRing, QQ
-    
+    from systems import chem_fake
     set_verbose(2)
 
     time = datetime.datetime.now()
