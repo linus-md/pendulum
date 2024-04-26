@@ -18,7 +18,7 @@ def chem_4():
           R('0'),
           R('0')]
 
-    qi = [R('x1 + x2 + x3 - x4 - 1'), R('x5 + x6 - 1')]
+    qi = [R('x1 + x2 + x3 + x4 - 1'), R('x5 + x6 - 1')]
     return qi, pi
 
 if __name__ == '__main__':
