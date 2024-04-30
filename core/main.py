@@ -5,7 +5,7 @@ from sage.all import ideal, set_verbose
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-set_verbose(2)
+#set_verbose(2)
 
 def diff_op(qi, pi):
     vars = qi.parent().gens()
@@ -22,11 +22,13 @@ def algorithm(qi, pi):
     while True:
         qi = [diff_op(qs, pi) for qs in qi]
         qi = [qs.reduce(G) for qs in qi]
+        logger.info(f'Monomial order: {qi[0].parent().term_order()}')
 
         if any(qs != 0 for qs in qi):
             i += 1
             logger.info(f'Iteration {i} - {datetime.datetime.now()}')
             G = ideal(list(set(G + qi))).groebner_basis()
+            print(G)
             # logger.info(G)
         else:
             return G
@@ -34,10 +36,10 @@ def algorithm(qi, pi):
 def algorithm_0(qi, pi):
     I = ideal(qi)  
     i = 0
-    logger.info('Algorithm 0 started')
-    logger.info(f'Iteration {i} - {datetime.datetime.now()}')
-    logger.info(I)
-    logger.info('')
+    #logger.info('Algorithm 0 started')
+    #logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+    #logger.info(I)
+    #logger.info('')
 
     while True:
         qi = [diff_op(qs, pi) for qs in qi]
@@ -46,8 +48,10 @@ def algorithm_0(qi, pi):
         if any(qs != 0 for qs in qi):
             i += 1
             I = I + ideal(qi)
-            logger.info(f'')
-            logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+            #logger.info(f'')
+            #logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+            logger.info(f'Monomial order: {qi[0].parent().term_order()}')
+            print(I.groebner_basis())
             # logger.info(I)
         else:
             # This gets computed eventhough we compute it for the reduction above...
@@ -58,8 +62,8 @@ if __name__ == '__main__':
     from sage.all import PolynomialRing, QQ
     
     time = datetime.datetime.now()
-    qi, pi = chem_fake()
-    res = algorithm(qi, pi)
+    qi, pi = double()
+    res = algorithm_0(qi, pi)
     
     print(res)
     print(f"{(datetime.datetime.now() - time).total_seconds()}s")
