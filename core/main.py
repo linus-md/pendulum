@@ -59,7 +59,7 @@ def algorithm_0(qi, pi):
         else:
             # This gets computed eventhough we compute it for the reduction above...
             logger.info('Algorithm Exp ended at - {}'.format(datetime.datetime.now()))
-            return 0#ideal(I).groebner_basis()
+            return I #ideal(I).groebner_basis()
 
 
 def algorithm_exp(qi, pi):
