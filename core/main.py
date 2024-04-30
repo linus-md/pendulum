@@ -38,7 +38,7 @@ def algorithm_0(qi, pi):
     i = 0
     logger.info('Algorithm 0 started')
     logger.info(f'Iteration {i} - {datetime.datetime.now()}')
-    #logger.info(I)
+    logger.info(I)
     #logger.info('')
 
     while True:
@@ -52,10 +52,10 @@ def algorithm_0(qi, pi):
             #logger.info(f'Number of generators: {len(I.gens())}')
 
             #logger.info(f'')
-            #logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+            logger.info(f'Iteration {i} - {datetime.datetime.now()}')
             #logger.info(f'Monomial order: {qi[0].parent().term_order()}')
             #print(I.groebner_basis())
-            ##logger.info(I)
+            logger.info(I)
         else:
             # This gets computed eventhough we compute it for the reduction above...
             return ideal(I).groebner_basis()
@@ -67,7 +67,7 @@ def algorithm_exp(qi, pi):
     logger.info(f'Iteration {i} - {datetime.datetime.now()}')
     S = qi 
     G = ideal(qi).groebner_basis()
-    ##logger.info(G)
+    logger.info(G)
     #logger.info('')
 
     while True:
@@ -77,11 +77,11 @@ def algorithm_exp(qi, pi):
 
         if any(qs != 0 for qs in qi):
             i += 1
-            #logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+            logger.info(f'Iteration {i} - {datetime.datetime.now()}')
             S = list(set(S + qi))
             G = ideal(S).groebner_basis()
             # print(G)
-            ##logger.info(G)
+            logger.info(G)
         else:
             return G
 
