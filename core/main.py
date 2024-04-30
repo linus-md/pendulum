@@ -55,10 +55,11 @@ def algorithm_0(qi, pi):
             logger.info(f'Iteration {i} - {datetime.datetime.now()}')
             #logger.info(f'Monomial order: {qi[0].parent().term_order()}')
             #print(I.groebner_basis())
-            logger.info(I)
+            #logger.info(I)
         else:
             # This gets computed eventhough we compute it for the reduction above...
-            return ideal(I).groebner_basis()
+            logger.info('Algorithm Exp ended at - {}'.format(datetime.datetime.now()))
+            return 0#ideal(I).groebner_basis()
 
 
 def algorithm_exp(qi, pi):
@@ -81,8 +82,9 @@ def algorithm_exp(qi, pi):
             S = list(set(S + qi))
             G = ideal(S).groebner_basis()
             # print(G)
-            logger.info(G)
+            #logger.info(G)
         else:
+            logger.info('Algorithm Exp ended at - {}'.format(datetime.datetime.now()))
             return G
 
 if __name__ == '__main__':
