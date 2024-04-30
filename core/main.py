@@ -36,8 +36,8 @@ def algorithm(qi, pi):
 def algorithm_0(qi, pi):
     I = ideal(qi)  
     i = 0
-    #logger.info('Algorithm 0 started')
-    #logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+    logger.info('Algorithm 0 started')
+    logger.info(f'Iteration {i} - {datetime.datetime.now()}')
     #logger.info(I)
     #logger.info('')
 
@@ -63,8 +63,8 @@ def algorithm_0(qi, pi):
 
 def algorithm_exp(qi, pi):
     i = 0
-    #logger.info('Algorithm 1 started')
-    #logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+    logger.info('Algorithm Exp started')
+    logger.info(f'Iteration {i} - {datetime.datetime.now()}')
     S = qi 
     G = ideal(qi).groebner_basis()
     ##logger.info(G)
