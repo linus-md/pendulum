@@ -6,3 +6,9 @@ INFO:core.main:[u1^2*y2^3 + v1^2*y2^3 - 4*x1*y1^2*v1*u2 + 6*x1*y1*v1*y2*u2 - 2*u
 INFO:core.main:Iteration 2 - 2024-04-30 15:37:21.476164
 INFO:core.main:Polynomial Sequence with 122 Polynomials in 10 Variables
 INFO:core.main:Iteration 3 - 2024-04-30 15:37:21.647048
+INFO:core.main:Polynomial Sequence with 526 Polynomials in 10 Variables
+INFO:core.main:Iteration 4 - 2024-04-30 16:51:57.422144
+INFO:core.main:Polynomial Sequence with 421 Polynomials in 10 Variables
+INFO:core.main:Iteration 5 - 2024-04-30 17:16:33.477395
+INFO:core.main:Polynomial Sequence with 177 Polynomials in 10 Variables
+INFO:core.main:Iteration 6 - 2024-04-30 17:21:33.694387
