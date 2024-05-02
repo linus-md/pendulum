@@ -49,18 +49,3 @@ def algorithm_0_msolve(qi, pi):
             logger.info(I)
         else:
             return groebner_basis_degrevlex(I, proof=False)
-
-if __name__ == '__main__':
-    from systems import double, chem_fake
-    set_verbose(2)
-
-    time = datetime.datetime.now()
-    qi, pi = double()
-    res = algorithm_0_msolve(qi, pi)
-    
-    print(res)
-    print(f"{(datetime.datetime.now() - time).total_seconds()}s")
-
-
-    # Alg 0:
-    # Alg 1:
