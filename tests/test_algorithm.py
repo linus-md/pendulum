@@ -1,6 +1,6 @@
 import pytest
 from sage.all import PolynomialRing, QQ
-from core.main import algorithm, algorithm_0
+from core.main import algorithm, algorithm_0, algorithm_exp
 from systems.benchmark.single import single
 from systems.benchmark.double import double
 from systems.benchmark.chem_1 import chem_1
@@ -23,6 +23,7 @@ def test_single_pendulum():
     
     assert algorithm(qi, pi) == g
     assert algorithm_0(qi, pi) == g
+    assert algorithm_exp(qi, pi) == g
 
 
 def test_simple_double_pendulum():
@@ -33,6 +34,7 @@ def test_simple_double_pendulum():
 
     assert algorithm(qi, pi) == g
     assert algorithm_0(qi, pi) == g
+    assert algorithm_exp(qi, pi) == g
 
 def test_chem_1():
     R = PolynomialRing(QQ, 'x1, x2, x3, x4, k1, k2, k3, T1, T2', 
@@ -41,3 +43,4 @@ def test_chem_1():
 
     assert algorithm(qi, pi) == qi
     assert algorithm_0(qi, pi) == qi
+    assert algorithm_exp(qi, pi) == qi

@@ -42,7 +42,7 @@ q := [x1^2 + y1^2 - 1, (x2 - x1)^2 + (y2 - y1)^2 - 1];
 #algorithm(q, p, vars);
 
 
-# Not really a Chemical reaction network (394s)
+# Not really a Chemical reaction network (66s)
 vars1 := [x1, x2, x3, x4, x5, x6, k1, k2, k3, k4, k5, k6];
 p1 := [
     - k1*x1 + k4*x3*x5, 
