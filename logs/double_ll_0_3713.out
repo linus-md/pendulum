@@ -12,3 +12,9 @@ INFO:core.main:Polynomial Sequence with 421 Polynomials in 10 Variables
 INFO:core.main:Iteration 5 - 2024-04-30 17:16:33.477395
 INFO:core.main:Polynomial Sequence with 177 Polynomials in 10 Variables
 INFO:core.main:Iteration 6 - 2024-04-30 17:21:33.694387
+INFO:core.main:Polynomial Sequence with 42 Polynomials in 10 Variables
+Polynomial Sequence with 42 Polynomials in 10 Variables
+
+real	285m50.688s
+user	284m57.321s
+sys	0m4.013s
