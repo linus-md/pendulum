@@ -1,0 +1,15 @@
+INFO:core.main:Algorithm Exp started
+INFO:core.main:Iteration 0 - 2024-05-01 05:52:22.171211
+INFO:core.main:[y1^2*x2 + 1/4*x2^3 - x1*y1*y2 - 1/2*y1*x2*y2 + 1/2*x1*y2^2 + 1/4*x2*y2^2 - x2, x1^2 + y1^2 - 1, x1*x2 - 1/2*x2^2 + y1*y2 - 1/2*y2^2]
+INFO:core.main:Iteration 1 - 2024-05-01 05:52:22.190960
+INFO:core.main:Iteration 2 - 2024-05-01 05:52:22.192905
+INFO:core.main:Iteration 3 - 2024-05-01 05:52:22.361278
+INFO:core.main:Iteration 4 - 2024-05-01 07:07:33.030969
+INFO:core.main:Iteration 5 - 2024-05-01 07:32:14.012443
+INFO:core.main:Iteration 6 - 2024-05-01 07:37:14.957634
+INFO:core.main:Algorithm Exp ended at - 2024-05-01 10:38:42.493594
+Polynomial Sequence with 42 Polynomials in 10 Variables
+
+real	286m25.656s
+user	285m32.489s
+sys	0m3.789s

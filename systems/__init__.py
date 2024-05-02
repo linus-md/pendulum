@@ -3,11 +3,12 @@ from .benchmark.double import double
 from .benchmark.double_ll import double_ll
 
 from .benchmark.kepler_simple import kepler_simple
-from .benchmark.kepler_half import kepler_half
+from .hard.kepler_half import kepler_half
 
 from .benchmark.chem_1 import chem_1
 from .benchmark.chem_4 import chem_4
 from .benchmark.chem_b2 import chem_b2
+from .benchmark.chem_fake_1 import chem_fake
 
 
 from .hard.triple_simple import triple_simple
