@@ -11,16 +11,16 @@ algorithm_gb := proc(qs, p, vars)
 	i := 0; 
 	tord := tdeg(op(vars)); 
 	gs := qs; 
-	G := Basis(qs, tord); 
+	G := Basis(qs, tord, characteristic=65521); 
 	while true do
 		i := i + 1;
-		gs := map(g ->  NormalForm(partial(g, p, vars), G, tord), gs);
+		gs := map(g ->  NormalForm(partial(g, p, vars), G, tord), gs, characteristic=65521);
 		gs := remove(`=`, gs, 0);
 		if nops(gs) = 0 then
 			return G;
 		fi;
 		G := [op(G), op(gs)]; 
-		G := Basis(G, tord); 
+		G := Basis(G, tord, characteristic=65521); 
 		end do; 
 	return G; 
 end proc;
@@ -33,16 +33,16 @@ algorithm_i := proc(qs, p, vars)
 	tord := tdeg(op(vars)); 
 	gs := qs; 
     S := gs;
-	G := Basis(S, tord); 
+	G := Basis(S, tord, characteristic=65521); 
 	while true do
 		i := i + 1;
-		gs := map(g ->  NormalForm(partial(g, p, vars), G, tord), gs);
+		gs := map(g ->  NormalForm(partial(g, p, vars), G, tord), gs, characteristic=65521);
 		gs := remove(`=`, gs, 0);
 		if nops(gs) = 0 then
 			return G;
 		fi;
 		S := [op(S), op(gs)]; 
-		G := Basis(S, tord); 
+		G := Basis(S, tord, characteristic=65521); 
 		end do; 
 	return G; 
 end proc;

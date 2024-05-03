@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Worksheet>
+<Version major="2023" minor="2"/>
+<Label-Scheme value="2" prefix=""/>
+<View-Properties presentation="true" autoexpanding_sections="true" UserProfileName="Maple Default Profile" NumericFormat-ApplyInteger="true" NumericFormat-ApplyRational="true" NumericFormat-ApplyExponent="false" editable="true">
+</View-Properties>
+<MapleNet-Properties prettyprint="3" warnlevel="3" compactdisplay="false" preplot="" helpbrowser="standard" displayprecision="-1" echo="1" scientificx="true" unitattributes="&quot;fontweight&quot; = &quot;bold&quot;" imaginaryunit="I" longdelim="true" elisiontermsthreshold="10000" elisiondigitsafter="100" elisiondigitsbefore="100" plotdevice="inline" errorbreak="1" plotoptions="" plotdriver="opengl" quiet="false" elisiontermsbefore="100" elisiontermsafter="100" historytimestamp="false" screenwidth="79" indentamount="4" plotoutput="terminal" screenpixelheight="900" rtablesize="[10, 10]" useclientjvm="true" format="document" labelwidth="20" postplot="" typesetting="extended" ansi="false" ansicolor="[]" elisiondigitsthreshold="10000" showassumed="1" ansilprint="false" trailingsemicolon="true" errorcursor="false" labelling="true" screenheight="25" prompt="&gt; " verboseproc="1" latexwidth="8.0" ShowLabels="true"/>
+<Styles>
+<Font name="Heading 1" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Warning" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="2D Output" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Heading 4" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Line Printed Output" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Heading 2" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="16" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Maple Output" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="2D Inert Output" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[144,144,144]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Heading 3" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="14" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Diagnostic" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[40,120,40]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Ordered List 1" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Maple Input" background="[255,255,255]" bold="true" executable="true" family="Courier New" foreground="[120,0,14]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Text Output" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Ordered List 2" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Ordered List 3" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Ordered List 4" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Ordered List 5" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Annotation Title" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Header and Footer" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="10" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="HyperlinkError" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" strikethrough="false" placeholder="false"/>
+<Font name="Atomic Variable" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[175,0,175]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="HyperlinkWarning" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" strikethrough="false" placeholder="false"/>
+<Font name="Dictionary Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[147,0,15]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" strikethrough="false" placeholder="false"/>
+<Font name="2D Math" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Bullet Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Maple Plot" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Annotation Text" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="List Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Dash Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="2D Input" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Error" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Title" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Text" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Normal" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Caption Reference" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Code" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[255,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Maple Input Placeholder" background="[255,255,255]" bold="true" executable="true" family="Courier New" foreground="[200,0,200]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="true"/>
+<Font name="Equation Label" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Author" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Font name="Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,128,128]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" strikethrough="false" placeholder="false"/>
+<Font name="Caption Text" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" strikethrough="false" placeholder="false"/>
+<Layout name="Heading 1" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="4" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Warning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 4" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Line Printed Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 2" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="2" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Maple Output" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.3" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 3" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Diagnostic" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Ordered List 1" alignment="left" bullet="numeric" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix="."/>
+<Layout name="Text Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="newline" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Ordered List 2" alignment="left" bullet="alphabetic" firstindent="0" leftmargin="36" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix="."/>
+<Layout name="Ordered List 3" alignment="left" bullet="roman" firstindent="0" leftmargin="72" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix="."/>
+<Layout name="Ordered List 4" alignment="left" bullet="ALPHABETIC" firstindent="0" leftmargin="108" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix="."/>
+<Layout name="Ordered List 5" alignment="left" bullet="ROMAN" firstindent="0" leftmargin="144" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix="."/>
+<Layout name="Annotation Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="HyperlinkError" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="HyperlinkWarning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Bullet Item" alignment="left" bullet="dot" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Maple Plot" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="List Item" alignment="left" bullet="indent" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Dash Item" alignment="left" bullet="dash" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Error" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Normal" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Author" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="8" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Pencil-style name="Pencil 1" pen-color="[0,0,0]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 2" pen-color="[0,0,255]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 3" pen-color="[0,0,0]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 4" pen-color="[0,0,255]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 5" pen-color="[255,0,0]" pen-height="5.0" pen-width="5.0" pen-opacity="1.0"/>
+<Highlighter-style name="Highlighter 5" pen-color="[255,255,0]" pen-height="48.0" pen-width="48.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 3" pen-color="[51,255,0]" pen-height="24.0" pen-width="24.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 4" pen-color="[0,255,255]" pen-height="32.0" pen-width="32.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 1" pen-color="[255,153,255]" pen-height="12.0" pen-width="8.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 2" pen-color="[255,204,0]" pen-height="14.0" pen-width="14.0" pen-opacity="0.8"/>
+</Styles>
+<Startup-Code startupcode=""/>
+<Task-table>
+	<Task-category name="&lt;default&gt;"/>
+</Task-table>
+<Task/><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L1" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block><CodeEditor-ExecGroup view="presentation" hide-input="false" inline-output="false" labelreference="L3" drawlabel="true" applyint="true" applyrational="true" display="code"><EC-CodeEditor id="CodeEditRegion0" expanded="true" visible="true" pixel-width="500" pixel-height="200" code-language="text/maple" autofit="true" wrapping="true" show-border="true" code-line-numbers="true">read(&quot;/Users/linussommer/Documents/GitHub/pendulum/maple/algorithms.mpl&quot;);
+read(&quot;/Users/linussommer/Documents/GitHub/pendulum/maple/systems/double_ll.mpl&quot;);</EC-CodeEditor>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXJvd0dGJDZiby1JI21pR0YkNiVRJkJhc2lzRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEiLEYnL0Y2USdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0ZALyUqc3ltbWV0cmljR0ZALyUobGFyZ2VvcEdGQC8lLm1vdmFibGVsaW1pdHNHRkAvJSdhY2NlbnRHRkAvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GLzYlUSVGR0xNRidGMkY1RjgtRi82JVExSGlsYmVydERpbWVuc2lvbkYnRjJGNUY4LUYvNiVRMkhpbGJlcnRQb2x5bm9taWFsRidGMkY1RjgtRi82JVEuSGlsYmVydFNlcmllc0YnRjJGNUY4LUYvNiVRK0hvbW9nZW5pemVGJ0YyRjVGOC1GLzYlUSxJbml0aWFsRm9ybUYnRjJGNUY4LUYvNiVRLEludGVyUmVkdWNlRidGMkY1RjgtRi82JVEoSXNCYXNpc0YnRjJGNUY4LUYvNiVRKUlzUHJvcGVyRidGMkY1RjgtRi82JVEySXNaZXJvRGltZW5zaW9uYWxGJ0YyRjVGOC1GLzYlUTNMZWFkaW5nQ29lZmZpY2llbnRGJ0YyRjVGOC1GLzYlUTBMZWFkaW5nTW9ub21pYWxGJ0YyRjVGOC1GLzYlUSxMZWFkaW5nVGVybUYnRjJGNUY4LUYvNiVRLE1hdHJpeE9yZGVyRidGMkY1RjgtRi82JVE2TWF4aW1hbEluZGVwZW5kZW50U2V0RidGMkY1RjgtRi82JVEuTW9ub21pYWxPcmRlckYnRjJGNUY4LUYvNiVRNU11bHRpcGxpY2F0aW9uTWF0cml4RidGMkY1RjgtRi82JVE5TXVsdGl2YXJpYXRlQ3ljbGljVmVjdG9yRidGMkY1RjgtRi82JVErTm9ybWFsRm9ybUYnRjJGNUY4LUYvNiVRKk5vcm1hbFNldEYnRjJGNUY4LUYvNiVRQVJhdGlvbmFsVW5pdmFyaWF0ZVJlcHJlc2VudGF0aW9uRidGMkY1RjgtRi82JVEnUmVkdWNlRidGMkY1RjgtRi82JVEuUmVtZW1iZXJCYXNpc0YnRjJGNUY4LUYvNiVRLFNQb2x5bm9taWFsRidGMkY1RjgtRi82JVEmU29sdmVGJ0YyRjVGOC1GLzYlUTVTdWdnZXN0VmFyaWFibGVPcmRlckYnRjJGNUY4LUYvNiVRKFN1cHBvcnRGJ0YyRjVGOC1GLzYlUSpUZXN0T3JkZXJGJ0YyRjVGOC1GLzYlUTBUb3JpY0lkZWFsQmFzaXNGJ0YyRjVGOC1GLzYlUS1UcmFpbGluZ1Rlcm1GJ0YyRjVGOC1GLzYlUTVVbml2YXJpYXRlUG9seW5vbWlhbEYnRjJGNUY4LUYvNiVRJVdhbGtGJ0YyRjVGOC1GLzYlUS9XZWlnaHRlZERlZ3JlZUYnRjJGNS8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGQEY8RjwvJSVvcGVuR1EnJmxzcWI7RicvJSZjbG9zZUdRJyZyc3FiO0Yn">N0RJJkJhc2lzRzYiSSVGR0xNR0YkSTFIaWxiZXJ0RGltZW5zaW9uR0YkSTJIaWxiZXJ0UG9seW5vbWlhbEdGJEkuSGlsYmVydFNlcmllc0dGJEkrSG9tb2dlbml6ZUdGJEksSW5pdGlhbEZvcm1HRiRJLEludGVyUmVkdWNlR0YkSShJc0Jhc2lzR0YkSSlJc1Byb3BlckdGJEkySXNaZXJvRGltZW5zaW9uYWxHRiRJM0xlYWRpbmdDb2VmZmljaWVudEdGJEkwTGVhZGluZ01vbm9taWFsR0YkSSxMZWFkaW5nVGVybUdGJEksTWF0cml4T3JkZXJHRiRJNk1heGltYWxJbmRlcGVuZGVudFNldEdGJEkuTW9ub21pYWxPcmRlckdGJEk1TXVsdGlwbGljYXRpb25NYXRyaXhHRiRJOU11bHRpdmFyaWF0ZUN5Y2xpY1ZlY3RvckdGJEkrTm9ybWFsRm9ybUdGJEkqTm9ybWFsU2V0R0YkSUFSYXRpb25hbFVuaXZhcmlhdGVSZXByZXNlbnRhdGlvbkdGJEknUmVkdWNlR0YkSS5SZW1lbWJlckJhc2lzR0YkSSxTUG9seW5vbWlhbEdGJEkmU29sdmVHRiRJNVN1Z2dlc3RWYXJpYWJsZU9yZGVyR0YkSShTdXBwb3J0R0YkSSpUZXN0T3JkZXJHRiRJMFRvcmljSWRlYWxCYXNpc0dGJEktVHJhaWxpbmdUZXJtR0YkSTVVbml2YXJpYXRlUG9seW5vbWlhbEdGJEklV2Fsa0dGJEkvV2VpZ2h0ZWREZWdyZWVHRiQ=</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXN1YkdGJDYlLUkjbWlHRiQ2JVEqaW5mb2xldmVsRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUYvNiVRLkdyb2VibmVyQmFzaXNGJ0YyRjUvJS9zdWJzY3JpcHRzaGlmdEdRIjBGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjZRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0ZGLyUpc3RyZXRjaHlHRkYvJSpzeW1tZXRyaWNHRkYvJShsYXJnZW9wR0ZGLyUubW92YWJsZWxpbWl0c0dGRi8lJ2FjY2VudEdGRi8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRlUtSSNtbkdGJDYkUSI1RidGQkZC">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+JkkqaW5mb2xldmVsR0YnNiNJLkdyb2VibmVyQmFzaXNHRigiIiY3I0Yx</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEocGFydGlhbEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtRiM2LC1GNjYvUSVwcm9jRicvJSVib2xkR0YxL0YzUSVib2xkRicvJStmb250d2VpZ2h0R0ZXRjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5GZW4tSShtZmVuY2VkR0YkNiQtRiM2Ki1GLDYlUSJxRidGL0YyLUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkhGWi9GTlEsMC4zMzMzMzMzZW1GJy1GLDYlUSJwRidGL0YyRl9vLUYsNiVRJXZhcnNGJ0YvRjIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5LUknbXNwYWNlR0YkNiYvJSdoZWlnaHRHUSYwLjBleEYnLyUmd2lkdGhHUSYwLjVlbUYnLyUmZGVwdGhHRmVwLyUqbGluZWJyZWFrR1ExZmlyc3Rwcm9jbmV3bGluZUYnLUYjNiotRjY2L1EmbG9jYWxGJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm4tRmFwNiZGY3BGZnBGaXAvRlxxUSVhdXRvRictRiM2Ji1GLDYlUSJpRidGL0YyRltwRl5wRjktRjY2LVEiO0YnRjlGO0Zib0ZARkJGREZGRkhGWkZNRmBwRltwRl5wRjktRiM2KC1GNjYvUSdyZXR1cm5GJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm5GY3EtRiM2KC1GLDYlUSRhZGRGJ0YvRjItRjY2LVEwJkFwcGx5RnVuY3Rpb247RidGOUY7Rj5GQEZCRkRGRkZIRlpGZm4tRmhuNiQtRiM2KC1GIzYmLUYjNilGZW8tRjY2LVEiW0YnRjkvRjxGMUY+L0ZBRjFGQkZERkZGSC9GS1EsMC4xNjY2NjY3ZW1GJy9GTkZqc0ZncS1GNjYtUSJdRidGOUZnc0Y+RmhzRkJGREZGRkhGaXMvRk5RLDAuMTExMTExMWVtRidGW3BGXnBGOS1GNjYtUSIqRidGOUY7Rj5GQEZCRkRGRkZIRmlzRlt0LUZobjYkLUYjNigtRiw2JVElZGlmZkYnRi9GMkZpci1GaG42JC1GIzYoRlxvRl9vLUYjNilGaG9GZHNGZ3FGXHRGW3BGXnBGOUZbcEZecEY5RjlGW3BGXnBGOUY5RjlGX28tRiM2KEZpcS1GNjYtUSI9RidGOUY7Rj5GQEZCRkRGRkZIRkpGTS1GIzYoLUkjbW5HRiQ2JFEiMUYnRjktRjY2LVEjLi5GJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRidGZm4tRiM2KC1GLDYlUSVub3BzRidGL0YyRmlyLUZobjYkLUYjNiZGaG9GW3BGXnBGOUY5RltwRl5wRjlGW3BGXnBGOUZbcEZecEY5RltwRl5wRjlGOUZbcEZecEY5RltwRl5wRjktRmFwNiZGY3BGZnBGaXAvRlxxUTZkZWNyZWFzZWluZGVudG5ld2xpbmVGJy1GNjYvUSllbmR+cHJvY0YnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbkZbcEZecEY5Rjk=">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SShwYXJ0aWFsR0YoZio2JUkicUdGKEkicEdGKEkldmFyc0dGKDYjSSJpR0YoRihGKE8tSSRhZGRHRiY2JComJjklNiM4JCIiIi1JJWRpZmZHRiY2JDkkJjkmRjxGPi9GPTtGPi1JJW5vcHNHRiY2I0ZERihGKEYoNyNGLg==</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEtYWxnb3JpdGhtX2diRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1GIzYsLUY2Ni9RJXByb2NGJy8lJWJvbGRHRjEvRjNRJWJvbGRGJy8lK2ZvbnR3ZWlnaHRHRldGO0Y+RkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTkZlbi1JKG1mZW5jZWRHRiQ2JC1GIzYqLUYsNiVRI3FzRidGL0YyLUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkhGWi9GTlEsMC4zMzMzMzMzZW1GJy1GLDYlUSJwRidGL0YyRl9vLUYsNiVRJXZhcnNGJ0YvRjIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5LUknbXNwYWNlR0YkNiYvJSdoZWlnaHRHUSYwLjBleEYnLyUmd2lkdGhHUSYwLjVlbUYnLyUmZGVwdGhHRmVwLyUqbGluZWJyZWFrR1ExZmlyc3Rwcm9jbmV3bGluZUYnLUYjNiotRjY2L1EmbG9jYWxGJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm4tRmFwNiZGY3BGZnBGaXAvRlxxUSVhdXRvRictRiM2LC1GLDYlUSJHRidGL0YyRl9vLUYsNiVRI2dzRidGL0YyRl9vLUYsNiVRImlGJ0YvRjJGX28tRiw2JVEldG9yZEYnRi9GMkZbcEZecEY5LUY2Ni1RIjtGJ0Y5RjtGYm9GQEZCRkRGRkZIRlpGTUZgcEZbcEZecEY5LUYjNistRiM2KC1GIzYoRl9yLUY2Ni1RKn4mIzg3ODg7fkYnRjlGO0Y+RkBGQkZERkZGSEZaRmZuLUkjbW5HRiQ2JFEiMEYnRjlGW3BGXnBGOUZlckZgcEZbcEZecEY5LUYjNigtRiM2KEZickZecy1GIzYoLUYsNiVRJXRkZWdGJ0YvRjItRjY2LVEwJkFwcGx5RnVuY3Rpb247RidGOUY7Rj5GQEZCRkRGRkZIRlpGZm4tRmhuNiQtRiM2Ji1GIzYoLUYsNiVRI29wRidGL0YyRl50LUZobjYkLUYjNiZGaG9GW3BGXnBGOUY5RltwRl5wRjlGW3BGXnBGOUY5RltwRl5wRjlGW3BGXnBGOUZlckZgcEZbcEZecEY5LUYjNigtRiM2KEZcckZec0Zcb0ZbcEZecEY5RmVyRmBwRltwRl5wRjktRiM2KC1GIzYoRmlxRl5zLUYjNigtRiM2KC1GLDYlUSlHcm9lYm5lckYnRi9GMi1GNjYtUSM6LUYnRjlGO0Y+RkBGQkZERkZGSEZaRmZuLUYsNiVRJkJhc2lzRidGL0YyRltwRl5wRjlGXnQtRmhuNiQtRiM2KkZcb0Zfb0ZickZfby1GIzYoLUYsNiVRL2NoYXJhY3RlcmlzdGljRidGL0YyLUY2Ni1RIj1GJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUZiczYkUSY2NTUyMUYnRjlGW3BGXnBGOUZbcEZecEY5RjlGW3BGXnBGOUZbcEZecEY5RmVyRmBwRltwRl5wRjktRiM2KC1GIzYqLUYjNiYtRjY2L1EjZG9GJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm5GW3BGXnBGOS1GYXA2JkZjcEZmcEZpcC9GXHFRNmluY3JlYXNlaW5kZW50bmV3bGluZUYnLUYjNistRiM2KC1GIzYoRl9yRl5zLUYjNiZGX3ItRjY2LVEiK0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EsMC4yMjIyMjIyZW1GJy9GTkZbeS1GYnM2JFEiMUYnRjlGOUZbcEZecEY5RmVyRmBwRltwRl5wRjktRiM2KC1GIzYoRlxyRl5zLUYjNigtRiw2JVEkbWFwRidGL0YyRl50LUZobjYkLUYjNiotRiM2KC1GLDYlUSJnRidGL0YyLUY2Ni1RKCYjODU5NDtGJ0Y5RjtGPkZARkJGREZGRkhGWkZmbi1GIzYoLUYjNihGanVGXXYtRiw2JVErTm9ybWFsRm9ybUYnRi9GMkZbcEZecEY5Rl50LUZobjYkLUYjNiotRiM2KC1GLDYlUShwYXJ0aWFsRidGL0YyRl50LUZobjYkLUYjNipGX3pGX29GZW9GX29GaG9GW3BGXnBGOUY5RltwRl5wRjlGX29GaXFGX29GYnJGW3BGXnBGOUY5RltwRl5wRjlGW3BGXnBGOUZfb0ZcckZfb0ZndkZbcEZecEY5RjlGW3BGXnBGOUZbcEZecEY5RmVyRmBwRltwRl5wRjktRiM2KC1GIzYoRlxyRl5zLUYjNigtRiw2JVEncmVtb3ZlRidGL0YyRl50LUZobjYkLUYjNiotRiw2JVEkYD1gRidGL0YyRl9vRlxyRl9vRmFzRltwRl5wRjlGOUZbcEZecEY5RltwRl5wRjlGZXJGYHBGW3BGXnBGOS1GIzYoLUYjNictRiM2LS1GNjYvUSNpZkYnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbkZjcS1GIzYoLUYjNigtRiw2JVElbm9wc0YnRi9GMkZedC1GaG42JC1GIzYmRlxyRltwRl5wRjlGOUZbcEZecEY5Rlx3RmFzRltwRl5wRjlGY3EtRjY2L1EldGhlbkYnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbkZbeC1GIzYoLUY2Ni9RJ3JldHVybkYnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbkZjcUZpcUZbcEZecEY5LUZhcDYmRmNwRmZwRmlwL0ZccVE2ZGVjcmVhc2VpbmRlbnRuZXdsaW5lRidGW3BGXnBGOS1GNjYvUSdlbmR+aWZGJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm5GW3BGXnBGOUZlckZgcEZbcEZecEY5LUYjNigtRiM2KEZpcUZecy1GaG42Ji1GIzYoLUYjNihGZ3RGXnQtRmhuNiQtRiM2JkZpcUZbcEZecEY5RjlGW3BGXnBGOUZfby1GIzYoRmd0Rl50RmldbEZbcEZecEY5RltwRl5wRjlGOS8lJW9wZW5HUSJbRicvJSZjbG9zZUdRIl1GJ0ZbcEZecEY5RmVyRmBwRltwRl5wRjktRiM2KEZpcUZecy1GIzYoRmh1Rl50LUZobjYkLUYjNipGaXFGX29GYnJGX29GZ3ZGW3BGXnBGOUY5RltwRl5wRjlGW3BGXnBGOUZbcEZecEY5RmVebC1GNjYvUSdlbmR+ZG9GJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm5GW3BGXnBGOUZlckZgcEZbcEZecEY5RmBebEZbcEZecEY5RmVebC1GNjYvUSllbmR+cHJvY0YnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbkZbcEZecEY5Rjk=">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SS1hbGdvcml0aG1fZ2JHRihmKjYlSSNxc0dGKEkicEdGKEkldmFyc0dGKDYmSSJHR0YoSSNnc0dGKEkiaUdGKEkldG9yZEdGKEYoRihDKD44JiIiIT44Jy1JJXRkZWdHRig2Iy1JI29wR0YmNiM5Jj44JTkkPjgkLV9JKUdyb2VibmVyR0YlSSZCYXNpc0dGKDYlRkdGPS9JL2NoYXJhY3RlcmlzdGljR0YoIiZAYic/KEYoIiIiRlNGKEkldHJ1ZUdGJkMoPkY6LCZGOkZTRlNGUz5GRi1JJG1hcEdGJjYlZio2I0kiZ0dGKEYoNiRJKW9wZXJhdG9yR0YoSSZhcnJvd0dGKEYoLV9GTEkrTm9ybWFsRm9ybUdGKDYlLUkocGFydGlhbEdGKDYlRkdUJFQmVCdUKUYoRig2KkYxOSVGMkZERjRGSUY3Rj1GRkZPPkZGLUkncmVtb3ZlR0YmNiVJIj1HRiZGRkY7QCQvLUklbm9wc0dGJjYjRkZGO09GST5GSTckLUZCNiNGSS1GQkZicD5GSS1GSzYlRklGPUZPRmNwRihGKEYoNyNGLg==</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEsYWxnb3JpdGhtX2lGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSkmQXNzaWduO0YnL0YzUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGPS8lKXN0cmV0Y2h5R0Y9LyUqc3ltbWV0cmljR0Y9LyUobGFyZ2VvcEdGPS8lLm1vdmFibGVsaW1pdHNHRj0vJSdhY2NlbnRHRj0vJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0ZMLUYjNiwtRjY2L1ElcHJvY0YnLyUlYm9sZEdGMS9GM1ElYm9sZEYnLyUrZm9udHdlaWdodEdGV0Y7Rj5GQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZORmVuLUkobWZlbmNlZEdGJDYkLUYjNiotRiw2JVEjcXNGJ0YvRjItRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSEZaL0ZOUSwwLjMzMzMzMzNlbUYnLUYsNiVRInBGJ0YvRjJGX28tRiw2JVEldmFyc0YnRi9GMi8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjktSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuNWVtRicvJSZkZXB0aEdGZXAvJSpsaW5lYnJlYWtHUTFmaXJzdHByb2NuZXdsaW5lRictRiM2Ki1GNjYvUSZsb2NhbEYnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbi1GYXA2JkZjcEZmcEZpcC9GXHFRJWF1dG9GJy1GIzYuLUYsNiVRIlNGJ0YvRjJGX28tRiw2JVEiR0YnRi9GMkZfby1GLDYlUSNnc0YnRi9GMkZfby1GLDYlUSJpRidGL0YyRl9vLUYsNiVRJXRvcmRGJ0YvRjJGW3BGXnBGOS1GNjYtUSI7RidGOUY7RmJvRkBGQkZERkZGSEZaRk1GYHBGW3BGXnBGOS1GIzYsLUYjNigtRiM2KEZici1GNjYtUSp+JiM4Nzg4O35GJ0Y5RjtGPkZARkJGREZGRkhGWkZmbi1JI21uR0YkNiRRIjBGJ0Y5RltwRl5wRjlGaHJGYHBGW3BGXnBGOS1GIzYoLUYjNihGZXJGYXMtRiM2KC1GLDYlUSV0ZGVnRidGL0YyLUY2Ni1RMCZBcHBseUZ1bmN0aW9uO0YnRjlGO0Y+RkBGQkZERkZGSEZaRmZuLUZobjYkLUYjNiYtRiM2KC1GLDYlUSNvcEYnRi9GMkZhdC1GaG42JC1GIzYmRmhvRltwRl5wRjlGOUZbcEZecEY5RltwRl5wRjlGOUZbcEZecEY5RltwRl5wRjlGaHJGYHBGW3BGXnBGOS1GIzYoLUYjNihGX3JGYXNGXG9GW3BGXnBGOUZockZgcEZbcEZecEY5LUYjNigtRiM2KEZpcUZhc0ZfckZbcEZecEY5RmhyRmBwRltwRl5wRjktRiM2KC1GIzYoRlxyRmFzLUYjNigtRiM2KC1GLDYlUSlHcm9lYm5lckYnRi9GMi1GNjYtUSM6LUYnRjlGO0Y+RkBGQkZERkZGSEZaRmZuLUYsNiVRJkJhc2lzRidGL0YyRltwRl5wRjlGYXQtRmhuNiQtRiM2KkZpcUZfb0ZlckZfby1GIzYoLUYsNiVRL2NoYXJhY3RlcmlzdGljRidGL0YyLUY2Ni1RIj1GJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUZlczYkUSY2NTUyMUYnRjlGW3BGXnBGOUZbcEZecEY5RjlGW3BGXnBGOUZbcEZecEY5RmhyRmBwRltwRl5wRjktRiM2KC1GIzYqLUYjNiYtRjY2L1EjZG9GJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm5GW3BGXnBGOS1GYXA2JkZjcEZmcEZpcC9GXHFRNmluY3JlYXNlaW5kZW50bmV3bGluZUYnLUYjNistRiM2KC1GIzYoRmJyRmFzLUYjNiZGYnItRjY2LVEiK0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EsMC4yMjIyMjIyZW1GJy9GTkZieS1GZXM2JFEiMUYnRjlGOUZbcEZecEY5RmhyRmBwRltwRl5wRjktRiM2KC1GIzYoRl9yRmFzLUYjNigtRiw2JVEkbWFwRidGL0YyRmF0LUZobjYkLUYjNiotRiM2KC1GLDYlUSJnRidGL0YyLUY2Ni1RKCYjODU5NDtGJ0Y5RjtGPkZARkJGREZGRkhGWkZmbi1GIzYoLUYjNihGYXZGZHYtRiw2JVErTm9ybWFsRm9ybUYnRi9GMkZbcEZecEY5RmF0LUZobjYkLUYjNiotRiM2KC1GLDYlUShwYXJ0aWFsRidGL0YyRmF0LUZobjYkLUYjNipGZnpGX29GZW9GX29GaG9GW3BGXnBGOUY5RltwRl5wRjlGX29GXHJGX29GZXJGW3BGXnBGOUY5RltwRl5wRjlGW3BGXnBGOUZfb0ZfckZfb0Zed0ZbcEZecEY5RjlGW3BGXnBGOUZbcEZecEY5RmhyRmBwRltwRl5wRjktRiM2KC1GIzYoRl9yRmFzLUYjNigtRiw2JVEncmVtb3ZlRidGL0YyRmF0LUZobjYkLUYjNiotRiw2JVEkYD1gRidGL0YyRl9vRl9yRl9vRmRzRltwRl5wRjlGOUZbcEZecEY5RltwRl5wRjlGaHJGYHBGW3BGXnBGOS1GIzYoLUYjNictRiM2LS1GNjYvUSNpZkYnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbkZjcS1GIzYoLUYjNigtRiw2JVElbm9wc0YnRi9GMkZhdC1GaG42JC1GIzYmRl9yRltwRl5wRjlGOUZbcEZecEY5RmN3RmRzRltwRl5wRjlGY3EtRjY2L1EldGhlbkYnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbkZieC1GIzYoLUY2Ni9RJ3JldHVybkYnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbkZjcUZcckZbcEZecEY5LUZhcDYmRmNwRmZwRmlwL0ZccVE2ZGVjcmVhc2VpbmRlbnRuZXdsaW5lRidGW3BGXnBGOS1GNjYvUSdlbmR+aWZGJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm5GW3BGXnBGOUZockZgcEZbcEZecEY5LUYjNigtRiM2KEZpcUZhcy1GaG42Ji1GIzYoLUYjNihGanRGYXQtRmhuNiQtRiM2JkZpcUZbcEZecEY5RjlGW3BGXnBGOUZfby1GIzYoRmp0RmF0RmBebEZbcEZecEY5RltwRl5wRjlGOS8lJW9wZW5HUSJbRicvJSZjbG9zZUdRIl1GJ0ZbcEZecEY5RmhyRmBwRltwRl5wRjlGW3ZGW3BGXnBGOUZcX2wtRjY2L1EnZW5kfmRvRidGVEZWRlhGO0Y+RkBGQkZERkZGSEZaRmZuRltwRl5wRjlGaHJGYHBGW3BGXnBGOUZnXmxGW3BGXnBGOUZcX2wtRjY2L1EpZW5kfnByb2NGJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm5GW3BGXnBGOUY5">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSxhbGdvcml0aG1faUdGKGYqNiVJI3FzR0YoSSJwR0YoSSV2YXJzR0YoNidJIlNHRihJIkdHRihJI2dzR0YoSSJpR0YoSSV0b3JkR0YoRihGKEMpPjgnIiIhPjgoLUkldGRlZ0dGKDYjLUkjb3BHRiY2IzkmPjgmOSQ+OCRGRz44JS1fSSlHcm9lYm5lckdGJUkmQmFzaXNHRig2JUZKRj4vSS9jaGFyYWN0ZXJpc3RpY0dGKCImQGInPyhGKCIiIkZWRihJJXRydWVHRiZDKD5GOywmRjtGVkZWRlY+RkctSSRtYXBHRiY2JWYqNiNJImdHRihGKDYkSSlvcGVyYXRvckdGKEkmYXJyb3dHRihGKC1fRk9JK05vcm1hbEZvcm1HRig2JS1JKHBhcnRpYWxHRig2JUZIVCRUJlQnVClGKEYoNipGMTklRjJGRUY1RkxGOEY+RkdGUj5GRy1JJ3JlbW92ZUdGJjYlSSI9R0YmRkdGPEAkLy1JJW5vcHNHRiY2I0ZHRjxPRkw+Rko3JC1GQzYjRkotRkNGZXBGS0ZmcEYoRihGKDcjRi4=</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEldmFyc0YnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSShtZmVuY2VkR0YkNiYtRiM2OC1GLDYlUSN4MUYnRi9GMi1GNjYtUSIsRidGOUY7L0Y/RjFGQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZOUSwwLjMzMzMzMzNlbUYnLUYsNiVRI3kxRidGL0YyRlctRiw2JVEjdTFGJ0YvRjJGVy1GLDYlUSN2MUYnRi9GMkZXLUYsNiVRI3gyRidGL0YyRlctRiw2JVEjeTJGJ0YvRjJGVy1GLDYlUSN1MkYnRi9GMkZXLUYsNiVRI3YyRidGL0YyRlctRiw2JVEjbDFGJ0YvRjJGVy1GLDYlUSNsMkYnRi9GMi8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjkvJSVvcGVuR1EnJmxzcWI7RicvJSZjbG9zZUdRJyZyc3FiO0YnRjk=">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSV2YXJzR0YoNyxJI3gxR0YoSSN5MUdGKEkjdTFHRihJI3YxR0YoSSN4MkdGKEkjeTJHRihJI3UyR0YoSSN2MkdGKEkjbDFHRihJI2wyR0YoNyNGLg==</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEicEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSShtZmVuY2VkR0YkNiYtRiM2OC1GLDYlUSN1MUYnRi9GMi1GNjYtUSIsRidGOUY7L0Y/RjFGQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZOUSwwLjMzMzMzMzNlbUYnLUYsNiVRI3YxRidGL0YyRlctRiM2Jy1GNjYtUSomdW1pbnVzMDtGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GYm8tRiM2Ji1GLDYlUSNsMUYnRi9GMi1GNjY/UTEmSW52aXNpYmxlVGltZXM7RicvJSdmYW1pbHlHUTBUaW1lc35OZXd+Um9tYW5GJy8lJXNpemVHUSMxMkYnLyUlYm9sZEdGPS9GMEY9LyUqdW5kZXJsaW5lR0Y9LyUuc3RyaWtldGhyb3VnaEdGPS8lKnN1YnNjcmlwdEdGPS8lLHN1cGVyc2NyaXB0R0Y9LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lK2JhY2tncm91bmRHUS5bMjU1LDI1NSwyNTVdRicvJSdvcGFxdWVHRj0vJStleGVjdXRhYmxlR0Y9LyUpcmVhZG9ubHlHRj0vJSljb21wb3NlZEdGPS8lKmNvbnZlcnRlZEdGPS8lK2ltc2VsZWN0ZWRHRj0vJSxwbGFjZWhvbGRlckdGPS8lNnNlbGVjdGlvbi1wbGFjZWhvbGRlckdGPUY5RjtGPkZARkJGREZGRkhGZW4vRk5GZm4tRiw2JVEjeDFGJ0YvRjJGOS1GNjYtUSgmbWludXM7RidGOUY7Rj5GQEZCRkRGRkZIRmFvRmNvLUYjNiYtRiw2JVEjbDJGJ0YvRjJGaW8tRlA2JC1GIzYmRmRyRmdyLUYsNiVRI3gyRidGL0YyRjlGOUY5RjlGVy1GIzYpRl5vLUYjNiZGZm9GaW8tRiw2JVEjeTFGJ0YvRjJGOUZnci1GIzYmRlxzRmlvLUZQNiQtRiM2JkZqc0Znci1GLDYlUSN5MkYnRi9GMkY5RjlGOUZnci1JI21uR0YkNiRRIjFGJ0Y5RjlGVy1GLDYlUSN1MkYnRi9GMkZXLUYsNiVRI3YyRidGL0YyRlctRiM2JUZeby1GIzYmRlxzRmlvLUZQNiQtRiM2JkZjc0ZnckZkckY5RjlGOUY5RlctRiM2J0Zeby1GIzYmRlxzRmlvLUZQNiQtRiM2JkZjdEZnckZqc0Y5RjlGOUZnckZmdEY5RlctRmd0NiRRIjBGJ0Y5RldGYHZGXXFGZ3FGOUY5LyUlb3BlbkdRJyZsc3FiO0YnLyUmY2xvc2VHUScmcnNxYjtGJ0Y5">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSJwR0YoNyxJI3UxR0YoSSN2MUdGKCwmKiZJI2wxR0YoIiIiSSN4MUdGKEY0ISIiKiZJI2wyR0YoRjQsJkY1RjRJI3gyR0YoRjZGNEY2LCgqJkYzRjRJI3kxR0YoRjRGNiomRjhGNCwmRj1GNEkjeTJHRihGNkY0RjZGNkY0SSN1MkdGKEkjdjJHRigsJComRjhGNCwmRjpGNEY1RjZGNEY2LCYqJkY4RjQsJkZARjRGPUY2RjRGNkY2RjQiIiFGSTcjRi4=</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEicUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSShtZmVuY2VkR0YkNiYtRiM2KC1GIzYoLUklbXN1cEdGJDYlLUYsNiVRI3gxRidGL0YyLUkjbW5HRiQ2JFEiMkYnRjkvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUY2Ni1RJyZwbHVzO0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EsMC4yMjIyMjIyZW1GJy9GTkZhby1GVzYlLUYsNiVRI3kxRidGL0YyRmZuRmpuLUY2Ni1RKCZtaW51cztGJ0Y5RjtGPkZARkJGREZGRkhGYG9GYm8tRmduNiRRIjFGJ0Y5RjktRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTlEsMC4zMzMzMzMzZW1GJy1GIzYoLUZXNiUtRlA2JC1GIzYmLUYsNiVRI3gyRidGL0YyRmhvRllGOUY5RmZuRmpuRl1vLUZXNiUtRlA2JC1GIzYmLUYsNiVRI3kyRidGL0YyRmhvRmVvRjlGOUZmbkZqbkZob0ZbcEY5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSJxR0YoNyQsKCokSSN4MUdGKCIiIyIiIiokSSN5MUdGKEYyRjMhIiJGMywoKiQsJkkjeDJHRihGM0YxRjZGMkYzKiQsJkkjeTJHRihGM0Y1RjZGMkYzRjZGMzcjRi4=</Equation></Text-field>
+</Output></CodeEditor-ExecGroup></Presentation-Block><Presentation-Block><CodeEditor-ExecGroup view="presentation" hide-input="false" inline-output="false" labelreference="L6" drawlabel="true" applyint="true" applyrational="true" display="code"><EC-CodeEditor id="CodeEditRegion1" expanded="true" visible="true" pixel-width="500" pixel-height="200" code-language="text/maple" autofit="true" wrapping="true" show-border="true" code-line-numbers="true">res_i := algorithm_i(q, p, vars);
+res_gb := algorithm_gb(q, p, vars);</EC-CodeEditor>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   2      1      1         2 x 7            5.0 per row,     0.0 MB      1 new,      0 zero     0.002 sec
+   3      1      1         3 x 9            3.7 per row,     0.0 MB      1 new,      0 zero     0.000 sec
+   4      1      1         9 x 18           4.4 per row,     0.0 MB      0 new,      1 zero     0.000 sec
+reduce:                    3 x 14           4.7 per row,     0.0 MB
+select:      0.002 sec  63%
+symbol:      0.000 sec   2%
+matrix:      0.000 sec  15%       2 good, 33.3% zero
+update:      0.000 sec   0%       3 pair, 25.0% elim
+gbasis:      0.003 sec  83%       3 polynomials
+basis:       0.004</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 3 polynomials, 14 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:         0.073 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   2      3      2         4 x 15           5.0 per row,     0.0 MB      2 new,      0 zero     0.001 sec
+   3      4      4        11 x 31           4.3 per row,     0.0 MB      4 new,      0 zero     0.000 sec
+   4     10     10        52 x 114          5.6 per row,     0.0 MB      3 new,      7 zero     0.000 sec
+   5     11     11       109 x 237          7.8 per row,     0.0 MB      3 new,      8 zero     0.001 sec
+   6      9      9       181 x 364          7.8 per row,     0.0 MB      0 new,      9 zero     0.001 sec
+reduce:                   14 x 127         11.6 per row,     0.0 MB
+select:      0.001 sec  29%
+symbol:      0.001 sec  14%
+matrix:      0.001 sec  18%      12 good, 66.7% zero
+update:      0.000 sec  11%      36 pair, 61.7% elim
+gbasis:      0.004 sec  57%      14 polynomials
+basis:       0.005</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 14 polynomials, 163 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:         0.082 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   2      4      2         4 x 15           5.0 per row,     0.0 MB      2 new,      0 zero     0.001 sec
+   3      9      4        11 x 31           4.3 per row,     0.0 MB      4 new,      0 zero     0.000 sec
+   4     19     15        72 x 197          5.8 per row,     0.0 MB      8 new,      7 zero     0.000 sec
+   4     45      2        10 x 42           5.4 per row,     0.0 MB      2 new,      0 zero     0.000 sec
+   5     53     53       395 x 991          8.4 per row,     0.0 MB     27 new,     26 zero     0.005 sec
+   5    124     45       379 x 976         12.0 per row,     0.0 MB     17 new,     28 zero     0.004 sec
+   5    170     18       245 x 602         11.5 per row,     0.0 MB      6 new,     12 zero     0.001 sec
+   6    186    186      2085 x 4048        15.9 per row,     0.3 MB     31 new,    155 zero     0.009 sec
+   6    202     60      1484 x 3491        20.0 per row,     0.2 MB      6 new,     54 zero     0.004 sec
+   7    180    178      3660 x 7169        22.5 per row,     0.6 MB     18 new,    160 zero     0.012 sec
+   7    115     90      2484 x 4689        30.9 per row,     0.6 MB      5 new,     85 zero     0.013 sec
+   8     54     53      9020 x 15758       23.7 per row,     1.7 MB      0 new,     53 zero     0.038 sec
+   9      1      1      1762 x 2905        21.0 per row,     0.3 MB      0 new,      1 zero     0.004 sec
+reduce:                  148 x 2812        86.4 per row,     0.1 MB
+select:      0.014 sec  12%
+symbol:      0.030 sec  27%
+matrix:      0.033 sec  29%     126 good, 82.2% zero
+update:      0.016 sec  14%     707 pair, 90.9% elim
+gbasis:      0.111 sec  29%     122 polynomials
+basis:       0.156</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 122 polynomials, 12880 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:         0.171 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   2     11      2         4 x 15           5.0 per row,     0.0 MB      2 new,      0 zero     0.001 sec
+   3     16      4        11 x 31           5.4 per row,     0.0 MB      4 new,      0 zero     0.000 sec
+   4     26     22        88 x 233          5.9 per row,     0.0 MB     15 new,      7 zero     0.001 sec
+   4     78      2        14 x 44           5.5 per row,     0.0 MB      2 new,      0 zero     0.000 sec
+   5     87     82       484 x 1014         8.5 per row,     0.0 MB     39 new,     43 zero     0.004 sec
+   5    250    101       669 x 1472        15.7 per row,     0.1 MB     41 new,     60 zero     0.007 sec
+   5    370     75       865 x 1780        15.2 per row,     0.1 MB     35 new,     40 zero     0.006 sec
+   5    527     27       543 x 1215        18.4 per row,     0.1 MB     15 new,     12 zero     0.004 sec
+   6    612    612      3574 x 5068        25.6 per row,     0.7 MB    158 new,    454 zero     0.042 sec
+   5    851    122       985 x 1838        26.1 per row,     0.2 MB     48 new,     74 zero     0.011 sec
+   5    990     26       361 x 745         23.3 per row,     0.1 MB     11 new,     15 zero     0.002 sec
+   6   1048    986      4474 x 5340        37.6 per row,     1.3 MB     90 new,    897 zero     0.035 sec
+   6    671    172      2644 x 4039        31.4 per row,     0.6 MB     25 new,    147 zero     0.012 sec
+   7    701    700      7745 x 9558        36.8 per row,     2.2 MB     52 new,    648 zero     0.048 sec
+   7    404    114      6199 x 8389        31.6 per row,     1.5 MB     10 new,    104 zero     0.019 sec
+   7    372     14      2673 x 3816        33.2 per row,     0.7 MB      0 new,     14 zero     0.005 sec
+   8    358    358     12207 x 14918       34.0 per row,     3.2 MB     22 new,    336 zero     0.060 sec
+   8    180     50     13102 x 16322       30.2 per row,     3.1 MB      2 new,     48 zero     0.056 sec
+   9    148    148     20790 x 24663       31.0 per row,     5.0 MB     12 new,    136 zero     0.080 sec
+   9    100     32     20924 x 24156       27.7 per row,     4.5 MB      2 new,     30 zero     0.050 sec
+  10     84     84     36084 x 40909       27.5 per row,     7.7 MB     12 new,     72 zero     0.146 sec
+  11    100    100     42865 x 47248       27.2 per row,     9.1 MB     12 new,     88 zero     0.198 sec
+  12    100    100     70514 x 76115       25.3 per row,    13.9 MB     10 new,     90 zero     0.279 sec
+  13     82     82    111030 x 117482      23.4 per row,    20.2 MB      6 new,     76 zero     0.430 sec
+  14     46     46    160800 x 168503      21.8 per row,    27.3 MB      2 new,     44 zero     0.581 sec
+  15     16     16    159021 x 165014      20.4 per row,    25.3 MB      2 new,     14 zero     0.482 sec
+  16     16     16    229603 x 236515      19.3 per row,    34.6 MB      2 new,     14 zero     0.752 sec
+  17     16     16    323262 x 331112      18.2 per row,    46.2 MB      2 new,     14 zero     1.101 sec
+  18     16     16    446969 x 455855      17.4 per row,    60.9 MB      2 new,     14 zero     1.481 sec
+  19     16     16    606714 x 616721      16.5 per row,    78.8 MB      2 new,     14 zero     2.093 sec
+  20     16     16    809476 x 820645      15.8 per row,   100.9 MB      2 new,     14 zero     3.301 sec
+  21     16     16   1064432 x 1076785     15.2 per row,   127.4 MB      2 new,     14 zero     4.053 sec
+  22     16     16   1381924 x 1395552     14.6 per row,   159.4 MB      2 new,     14 zero     4.940 sec
+  23     16     16   1772154 x 1787092     14.1 per row,   197.3 MB      2 new,     14 zero     6.684 sec
+  24     16     16   2250171 x 2266516     13.6 per row,   242.5 MB      2 new,     14 zero     8.762 sec
+  25     16     16   2827091 x 2844922     13.2 per row,   295.6 MB      2 new,     14 zero    11.371 sec
+  26     16     16   3522803 x 3542158     12.8 per row,   357.9 MB      2 new,     14 zero    14.924 sec
+  27     14     14   4350588 x 4371495     12.5 per row,   430.0 MB      0 new,     14 zero    19.463 sec
+reduce:                  715 x 26960      193.8 per row,     1.1 MB
+select:      0.336 sec   0%
+symbol:     63.949 sec  78%
+matrix:     17.108 sec  21%     651 good, 84.7% zero
+update:      0.095 sec   0%    4267 pair, 97.5% elim
+gbasis:     81.708 sec   1%     526 polynomials
+basis:     144.390</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 526 polynomials, 134896 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:        81.771 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   2     16      2         4 x 15           5.0 per row,     0.0 MB      2 new,      0 zero     0.001 sec
+   3     21      4        11 x 31           5.4 per row,     0.0 MB      4 new,      0 zero     0.000 sec
+   4     35     26        95 x 264          6.3 per row,     0.0 MB     19 new,      7 zero     0.001 sec
+   4    108      4        20 x 98          10.9 per row,     0.0 MB      4 new,      0 zero     0.000 sec
+   5    129    119       645 x 1363         9.6 per row,     0.0 MB     61 new,     58 zero     0.006 sec
+   5    423    189      1068 x 1965        18.9 per row,     0.2 MB     96 new,     93 zero     0.015 sec
+   5    734    228      1392 x 2231        22.2 per row,     0.2 MB    134 new,     94 zero     0.025 sec
+   5   1221    217      1381 x 2147        27.5 per row,     0.3 MB    160 new,     57 zero     0.040 sec
+   4   1461      7        54 x 181         29.1 per row,     0.0 MB      7 new,      0 zero     0.002 sec
+   5   1501    688      2233 x 2322        31.9 per row,     0.6 MB    202 new,    487 zero     0.052 sec
+   5   1623    942      2669 x 2259        30.7 per row,     0.6 MB     44 new,    898 zero     0.016 sec
+   5    956    127      1629 x 1989        27.3 per row,     0.3 MB      7 new,    120 zero     0.005 sec
+   6    890    890      4336 x 3988        28.6 per row,     1.0 MB      8 new,    895 zero     0.014 sec
+   6     59     18      1507 x 1765        23.3 per row,     0.3 MB      2 new,     16 zero     0.005 sec
+   7     59     57      5364 x 5906        21.8 per row,     0.9 MB      6 new,     51 zero     0.020 sec
+   8     54     52     10144 x 10779       19.2 per row,     1.5 MB      4 new,     48 zero     0.044 sec
+   9     38     36     17555 x 18290       17.4 per row,     2.4 MB      4 new,     32 zero     0.040 sec
+  10     38     36     29699 x 30530       15.8 per row,     3.7 MB      4 new,     32 zero     0.069 sec
+  11     38     36     46846 x 47747       14.7 per row,     5.4 MB      4 new,     32 zero     0.116 sec
+  11     24     16     34261 x 34749       13.8 per row,     3.7 MB      0 new,     16 zero     0.078 sec
+  12      8      6     34579 x 35193       14.0 per row,     3.8 MB      0 new,      6 zero     0.077 sec
+  13      2      2     15807 x 16077       14.9 per row,     1.9 MB      0 new,      2 zero     0.034 sec
+reduce:                  426 x 1234        43.5 per row,     0.1 MB
+select:      0.017 sec   3%
+symbol:      0.380 sec  57%
+matrix:      0.157 sec  24%     772 good, 79.2% zero
+update:      0.105 sec  16%    3702 pair, 98.1% elim
+gbasis:      0.668 sec   4%     421 polynomials
+basis:       1.121</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 421 polynomials, 17271 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:         0.699 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   2     25      2         4 x 15           5.0 per row,     0.0 MB      2 new,      0 zero     0.001 sec
+   3     29      4        11 x 31           4.3 per row,     0.0 MB      4 new,      0 zero     0.000 sec
+   4     45     26        95 x 264          6.2 per row,     0.0 MB     19 new,      7 zero     0.001 sec
+   4    130      4        20 x 98          10.9 per row,     0.0 MB      4 new,      0 zero     0.001 sec
+   5    153    123       654 x 1375         9.3 per row,     0.0 MB     65 new,     58 zero     0.007 sec
+   5    490    201      1153 x 2083        17.9 per row,     0.2 MB    106 new,     95 zero     0.015 sec
+   5    790    290      1516 x 2279        22.4 per row,     0.3 MB    182 new,    108 zero     0.039 sec
+   5   1320    471      1800 x 2175        28.1 per row,     0.4 MB    299 new,    172 zero     0.076 sec
+   4   1464    257       769 x 827         18.5 per row,     0.1 MB    122 new,    135 zero     0.019 sec
+   3   1576      9        58 x 93           9.3 per row,     0.0 MB      3 new,      6 zero     0.001 sec
+   4   1544    453      1155 x 866         12.7 per row,     0.1 MB     28 new,    425 zero     0.005 sec
+   3   1168     10        67 x 100          8.9 per row,     0.0 MB      0 new,     10 zero     0.000 sec
+   4   1158    134       708 x 707         10.8 per row,     0.1 MB      3 new,    131 zero     0.002 sec
+   4   1037     19       281 x 327         13.1 per row,     0.0 MB      1 new,     18 zero     0.001 sec
+   5   1027   1027      2778 x 1862        19.3 per row,     0.4 MB      3 new,   1044 zero     0.006 sec
+   5     23      9       333 x 388         10.8 per row,     0.0 MB      0 new,      9 zero     0.001 sec
+   6     14     14       416 x 466         11.5 per row,     0.0 MB      0 new,     14 zero     0.001 sec
+reduce:                  280 x 408         16.2 per row,     0.0 MB
+select:      0.009 sec   5%
+symbol:      0.011 sec   6%
+matrix:      0.059 sec  33%     841 good, 72.6% zero
+update:      0.096 sec  54%    3053 pair, 98.4% elim
+gbasis:      0.177 sec   6%     177 polynomials
+basis:       0.239</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 177 polynomials, 2643 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:         0.204 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   2     30      2         4 x 15           5.0 per row,     0.0 MB      2 new,      0 zero     0.001 sec
+   3     34      5        13 x 57           7.9 per row,     0.0 MB      5 new,      0 zero     0.000 sec
+   4     55     30       116 x 365          8.8 per row,     0.0 MB     23 new,      7 zero     0.001 sec
+   4    167      4        20 x 98          10.9 per row,     0.0 MB      4 new,      0 zero     0.000 sec
+   5    191    153       945 x 1842        13.6 per row,     0.1 MB     88 new,     65 zero     0.013 sec
+   5    631    247      1352 x 2244        22.8 per row,     0.2 MB    147 new,    100 zero     0.032 sec
+   5   1079    346      1731 x 2384        28.9 per row,     0.4 MB    237 new,    109 zero     0.059 sec
+   5   1768    704      2310 x 2314        32.4 per row,     0.6 MB    433 new,    271 zero     0.128 sec
+   3   1799     26        90 x 122          8.1 per row,     0.0 MB     15 new,     11 zero     0.002 sec
+   3   1689     15        94 x 136          8.7 per row,     0.0 MB     13 new,      2 zero     0.002 sec
+   2   1292      3        11 x 10           2.4 per row,     0.0 MB      2 new,      1 zero     0.001 sec
+   3   1250     53       143 x 118          5.1 per row,     0.0 MB      5 new,     48 zero     0.001 sec
+   3   1156     13        74 x 86           5.9 per row,     0.0 MB      3 new,     10 zero     0.001 sec
+   4   1149    716      1537 x 869         15.4 per row,     0.2 MB     25 new,    701 zero     0.004 sec
+   3    422     64       217 x 186          6.0 per row,     0.0 MB      4 new,     60 zero     0.001 sec
+   3    361     24        75 x 66           5.0 per row,     0.0 MB      1 new,     23 zero     0.001 sec
+   3    340      8        47 x 53           4.2 per row,     0.0 MB      0 new,      8 zero     0.001 sec
+   4    332     71       320 x 277          6.3 per row,     0.0 MB      0 new,     71 zero     0.001 sec
+   5    261    261      1332 x 1099        11.9 per row,     0.1 MB      0 new,    261 zero     0.002 sec
+reduce:                   76 x 104          4.6 per row,     0.0 MB
+select:      0.013 sec   5%
+symbol:      0.010 sec   4%
+matrix:      0.096 sec  39%    1007 good, 63.4% zero
+update:      0.129 sec  52%    2745 pair, 99.0% elim
+gbasis:      0.250 sec   6%      42 polynomials
+basis:       0.339</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 42 polynomials, 127 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:         0.279 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEmcmVzX2lGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSkmQXNzaWduO0YnL0YzUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGPS8lKXN0cmV0Y2h5R0Y9LyUqc3ltbWV0cmljR0Y9LyUobGFyZ2VvcEdGPS8lLm1vdmFibGVsaW1pdHNHRj0vJSdhY2NlbnRHRj0vJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0ZMLUkobWZlbmNlZEdGJDYmLUYjNmJwLUYsNiVRI3YyRidGL0YyLUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkgvRktRJjAuMGVtRicvRk5RLDAuMzMzMzMzM2VtRictRiw2JVEjdjFGJ0YvRjJGVy1GIzYoLUYjNiYtRiw2JVEjbDJGJ0YvRjItRjY2P1ExJkludmlzaWJsZVRpbWVzO0YnLyUnZmFtaWx5R1EwVGltZXN+TmV3flJvbWFuRicvJSVzaXplR1EjMTJGJy8lJWJvbGRHRj0vRjBGPS8lKnVuZGVybGluZUdGPS8lLnN0cmlrZXRocm91Z2hHRj0vJSpzdWJzY3JpcHRHRj0vJSxzdXBlcnNjcmlwdEdGPS8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y9LyUrZXhlY3V0YWJsZUdGPS8lKXJlYWRvbmx5R0Y9LyUpY29tcG9zZWRHRj0vJSpjb252ZXJ0ZWRHRj0vJStpbXNlbGVjdGVkR0Y9LyUscGxhY2Vob2xkZXJHRj0vJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRj1GOUY7Rj5GQEZCRkRGRkZIRmVuL0ZORmZuLUYsNiVRI3kxRidGL0YyRjktRjY2LVEnJnBsdXM7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjIyMjIyMjJlbUYnL0ZORmVyLUYjNigtSSNtbkdGJDYkUSY2NTUyMEYnRjlGY29GYG9GY28tRiw2JVEjeTJGJ0YvRjJGOUZhckZpckY5RlctRiM2LC1GIzYmRmlyRmNvLUklbXN1cEdGJDYlLUYsNiVRI2wxRidGL0YyLUZqcjYkUSIyRidGOS8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRidGOUZhci1GIzYoRmlyRmNvRmdzRmNvRmBvRjlGYXItRiM2JkZnc0Zjb0Zdc0Y5RmFyLUYjNiZGanNGY28tRmVzNiVGYG9GanNGXXRGOUZhci1GIzYoLUZqcjYkUSY2NTUxN0YnRjlGY29GYG9GY29GXXNGOUY5RlctRiM2Ji1GIzYmRmdzRmNvRl5yRjlGYXJGanNGOUZXLUYjNigtRiM2KC1GanI2JFEmMzI3NjFGJ0Y5RmNvRmdzRmNvLUYsNiVRI3UyRidGL0YyRjlGYXItRiM2JkZgb0Zjb0ZodUY5RmFyLUYjNiZGaHVGY29GXXNGOUY5RlctRiM2JkZodUZjby1GLDYlUSN4MkYnRi9GMkY5RlctRiM2LC1GIzYmLUYsNiVRI3UxRidGL0YyRmNvRmh1RjlGYXItRiM2JkZpckZjby1GZXM2JUZodUZqc0ZddEY5RmFyRmBvRmFyLUYjNiZGaXJGY29GXnJGOUZhckZdc0Y5RlctRiM2JkZjdUZhci1GIzYmRmh1RmNvRl5yRjlGOUZXLUYjNiZGaHVGY28tRiw2JVEjeDFGJ0YvRjJGOUZXLUYjNiwtRiM2Ji1GanI2JFEmNDkxNDJGJ0Y5RmNvRmRzRjlGYXItRiM2KEZqc0Zjb0Znc0Zjb0Zgb0Y5RmFyLUYjNiZGaXJGY29GZnRGOUZhci1GIzYoLUZqcjYkUSI2RidGOUZjb0Zgb0Zjb0Zdc0Y5RmFyLUZlczYlRl1zRmpzRl10RjlGVy1GIzYoLUYjNihGZXVGY29GZ3NGY29GYXZGOUZhci1GIzYmRmBvRmNvRmF2RjlGYXItRiM2JkZhdkZjb0Zdc0Y5RjlGVy1GIzYoLUYjNihGZXVGY29GZ3NGY29GaHZGOUZhci1GIzYmRmBvRmNvRmh2RjlGYXItRiM2JkZodkZjb0Zdc0Y5RjlGVy1GIzYsLUYjNiYtRmpyNiRRJjE2MzgxRidGOUZjb0Zkc0Y5RmFyLUYjNiZGZ3NGY29GYG9GOUZhckZjeEZhci1GIzYoLUZqcjYkUSIzRidGOUZjb0Zgb0Zjb0Zdc0Y5RmFyLUYjNiZGXnJGY29GXXNGOUY5RlctRiM2KC1GIzYoRmV1RmNvRmdzRmNvRmd3RjlGYXItRiM2JkZgb0Zjb0Znd0Y5RmFyLUYjNiZGZ3dGY29GXXNGOUY5RlctRiM2JkZodkZjb0ZhdkY5RlctRiM2JkZeeUZhci1GIzYmRmF2RmNvRl5yRjlGOUZXLUYjNiotRiM2Ji1GanI2JFElODE5MEYnRjlGY29GZHNGOUZhci1GIzYmRmV1RmNvRmZ0RjlGYXItRiM2JkZhdkZjb0Znd0Y5RmFyLUYjNiYtRmpyNiRRJjMyNzYwRidGOUZjby1GZXM2JUZhdkZqc0ZddEY5RjlGVy1GIzYuLUZlczYlRmh2RmpzRl10RmFyRl13RmFyLUYjNiZGaXJGY29GZ3NGOUZhci1GIzYmRmlyRmNvRmBvRjlGYXJGX3dGYXItRiM2JkZpckZjb0Zdc0Y5RjlGVy1GIzYmRmZ5RmFyLUYjNiZGaHZGY29GXnJGOUY5RlctRiM2JkZodkZjb0Znd0Y5RlctRiM2KC1GIzYmLUZqcjYkUSY0OTE0MUYnRjlGY29GZHNGOUZhci1GZXM2JUZeckZqc0ZddEZhci1GanI2JFEmNjU1MTlGJ0Y5RjlGVy1GIzYmRl5bbEZhci1GIzYmRmd3RmNvRl5yRjlGOUZXLUYjNigtRiM2Ji1GanI2JFEmMTYzODBGJ0Y5RmNvRmRzRjlGYXItRmVzNiVGZ3dGanNGXXRGYXItRmpyNiRRIjFGJ0Y5RjlGVy1GIzYqLUZlczYlRmBvRmd6Rl10RmFyLUYjNiZGZV5sRmNvRmBvRjlGYXJGXnJGYXJGZF1sRjlGVy1GIzYmLUYjNiZGZnRGY29GaHVGOUZhci1GIzYmRmlyRmNvRmh1RjlGOUZXLUYjNiwtRiM2KEZldUZjb0Znc0Zjb0ZmdEY5RmFyLUYjNiZGZnRGY29GXXNGOUZhci1GIzYmRmdcbEZjb0Znc0Y5RmFyRmBvRmFyRl93RjlGVy1GIzYmLUYjNiZGZnRGY29GYXZGOUZhci1GIzYmRmlyRmNvRmF2RjlGOUZXLUYjNiYtRiM2JkZmdEZjb0ZodkY5RmFyLUYjNiZGaXJGY29GaHZGOUY5RlctRiM2Ji1GIzYmRmZ0RmNvRmd3RjlGYXItRiM2JkZpckZjb0Znd0Y5RjlGVy1GIzYuLUYjNiZGZHNGY29GYG9GOUZhci1GIzYoRmlyRmNvRmdzRmNvRmZ0RjlGYXItRiM2JkZnekZjb0Znc0Y5RmFyLUYjNiYtRmpyNiRRJjY1NTE1RidGOUZjb0Zgb0Y5RmFyLUYjNiZGZ3hGY29GXnJGOUZhci1GIzYmRmVebEZjb0Zdc0Y5RjlGVy1GIzYqLUYjNiZGXXdGY29GYG9GOUZhci1GIzYmLUZqcjYkUSY1NzMzMUYnRjlGY29GZHNGOUZhci1GIzYmRmdcbEZjb0ZmdEY5RmFyRmVcbEY5RlctRiM2MC1GIzYoRmBfbEZjb0Znc0Zjb0ZmdEY5RmFyLUYjNiZGYG9GY29GalxsRjlGYXItRiM2JkZlXmxGY29GXXdGOUZhci1GIzYmRmB6RmNvRmdzRjlGYXItRiM2JkZldUZjb0Zgb0Y5RmFyLUYjNiZGZXVGY29GXnJGOUZhci1GIzYmRmV1RmNvRl1zRjlGOUZXLUYjNigtRmVzNiVGZ3NGZ3pGXXRGYXItRiM2Ji1GanI2JFEmNjU1MTNGJ0Y5RmNvRmdzRjlGYXItRiM2JkZgZWxGY29GXnJGOUY5RlctRiM2Ji1GIzYmRmRzRmNvRmh1RjlGYXItRiM2JkZqdEZjb0ZodUY5RjlGVy1GIzYmLUYjNiZGZHNGY29GYXZGOUZhci1GIzYmRmp0RmNvRmF2RjlGOUZXLUYjNiYtRiM2JkZkc0Zjb0ZodkY5RmFyLUYjNiZGanRGY29GaHZGOUY5RlctRiM2Ji1GIzYmRmRzRmNvRmd3RjlGYXItRiM2JkZqdEZjb0Znd0Y5RjlGVy1GIzYwLUYjNiZGZ3NGY29GXXdGOUZhci1GIzYmLUZqcjYkUSY0OTE0MEYnRjlGY29GZHNGOUZhckZgdEZhckZkdEZhci1GIzYoRmVebEZjb0Zgb0Zjb0Zdc0Y5RmFyLUYjNiZGaXJGY29GalxsRjlGYXJGaXJGOUZXLUYjNi5GYmJsRmFyLUYjNiZGZ3NGY29GalxsRjlGYXItRiM2JkZqdEZjb0Zdd0Y5RmFyLUYjNiZGanNGY29GZ3NGOUZhci1GIzYmRmpzRmNvRmBvRjlGYXItRiM2JkZqc0Zjb0Zdc0Y5RjlGVy1GZXM2JUZodUZnekZddEZXLUZlczYlRmF2Rmd6Rl10RmdwRmFxRjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSZyZXNfaUdGKDdMSSN2MkdGKEkjdjFHRigsKComSSNsMkdGKCIiIkkjeTFHRihGNEY0KiZGM0Y0SSN5MkdGKEY0IiY/YidGOEY0LCwqJEkjbDFHRigiIiNGOComRjtGNEYzRjRGOComRjtGNEY3RjRGNCokRjNGPEY8RjYiJjxiJywmKiZGO0Y0RjVGNEY0RjxGNCwoKiZGO0Y0SSN1MkdGKEY0IiZoRiQqJkYzRjRGRUY0RjQqJkZFRjRGN0Y0RjQqJkZFRjRJI3gyR0YoRjQsLComSSN1MUdGKEY0RkVGNEY0KiRGRUY8RjhGM0Y0RjVGOEY3RjQsJkZERkYqJkZFRjRGNUY0RjQqJkZFRjRJI3gxR0YoRjQsLEY6IiZVIlxGPUY8Rj9GOEY2IiInKiRGN0Y8RjQsKComRjtGNEZKRjRGRiomRjNGNEZKRjRGNComRkpGNEY3RjRGNCwoKiZGO0Y0Rk1GNEZGKiZGM0Y0Rk1GNEY0KiZGTUY0RjdGNEY0LCxGOiImIlE7Rj1GNEY/RjhGNiIiJComRjVGNEY3RjRGNCwoKiZGO0Y0RlJGNEZGKiZGM0Y0RlJGNEY0KiZGUkY0RjdGNEY0KiZGTUY0RkpGNCwmRlhGRiomRkpGNEY1RjRGNCwqRjoiJSE+KUY/RkYqJkZSRjRGSkY0RjQqJEZKRjwiJmdGJCwuKiRGTUY8RjRGTkY0RjtGOEYzRjhGNUY4RjdGOCwmRmZuRkYqJkZNRjRGNUY0RjQqJkZNRjRGUkY0LChGOiImVCJcKiRGNUY8RjQiJj5iJ0Y0LCZGXm9GRiomRlJGNEY1RjRGNCwoRjoiJiFROyokRlJGPEY0RjRGNCwqKiRGM0Zbb0Y0RjNGYXBGNUY0RjdGOCwmKiZGM0Y8RkVGNEY0RkVGOCwsKiZGO0Y0RjNGPEZGKiZGM0Y8RjdGNEY0RjtGaG9GM0Y0RjVGOCwmKiZGM0Y8RkpGNEY0RkpGOCwmKiZGM0Y8Rk1GNEY0Rk1GOCwmKiZGM0Y8RlJGNEY0RlJGOCwuKiZGO0Y8RjNGNEY0RlxxRjhGO0Zbb0YzIiY6YidGNUZVRjdGYXAsKiomRjNGNEZFRjxGNEY6IiZKdCZGP0Zob0Znb0ZobywwRlxxRmVwKiZGM0Y0RkpGPEY0Rk5GYXBGO0ZqbkYzRkZGNUZGRjdGRiwoKiRGO0Zbb0Y0RjsiJjhiJ0Y1Rl5yLCYqJkY7RjxGRUY0RjRGRUZALCYqJkY7RjxGSkY0RjRGSkZALCYqJkY7RjxGTUY0RjRGTUZALCYqJkY7RjxGUkY0RjRGUkZALDAqJkY7RjRGRUY8RjRGOiImUyJcRj1GOEY/RjxGNkZhcEZnb0Y4RjhGNCwuRlxxRjgqJkY7RjRGSkY8RjRGTkZARjtGPEYzRjxGN0Y8KiRGRUZbbyokRkpGW283I0Yu</Equation></Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   2      5      1         2 x 8            5.0 per row,     0.0 MB      1 new,      0 zero     0.001 sec
+   3      6      4        12 x 31           4.5 per row,     0.0 MB      3 new,      1 zero     0.000 sec
+   4     10     10        52 x 114          5.6 per row,     0.0 MB      3 new,      7 zero     0.000 sec
+   5     11     11       109 x 237          7.8 per row,     0.0 MB      3 new,      8 zero     0.001 sec
+   6      9      9       180 x 363          7.8 per row,     0.0 MB      0 new,      9 zero     0.001 sec
+reduce:                   14 x 127         11.6 per row,     0.0 MB
+select:      0.001 sec  36%
+symbol:      0.001 sec  20%
+matrix:      0.001 sec  24%      10 good, 71.4% zero
+update:      0.000 sec   2%      35 pair, 62.8% elim
+gbasis:      0.003 sec  54%      14 polynomials
+basis:       0.004</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 14 polynomials, 163 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:         0.033 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   3     47      4        15 x 31           4.9 per row,     0.0 MB      0 new,      4 zero     0.001 sec
+   4     43     15        75 x 197          6.3 per row,     0.0 MB      5 new,     10 zero     0.001 sec
+   4     55      2        10 x 42           5.4 per row,     0.0 MB      2 new,      0 zero     0.000 sec
+   5     63     53       398 x 991          8.5 per row,     0.0 MB     24 new,     29 zero     0.002 sec
+   5    124     45       379 x 976         12.1 per row,     0.0 MB     17 new,     28 zero     0.002 sec
+   5    170     18       247 x 604         11.4 per row,     0.0 MB      6 new,     12 zero     0.001 sec
+   6    186    186      2105 x 4068        15.8 per row,     0.3 MB     31 new,    155 zero     0.009 sec
+   6    202     60      1482 x 3489        20.1 per row,     0.2 MB      6 new,     54 zero     0.004 sec
+   7    180    178      3662 x 7171        22.5 per row,     0.6 MB     18 new,    160 zero     0.012 sec
+   7    115     90      2482 x 4687        31.0 per row,     0.6 MB      5 new,     85 zero     0.007 sec
+   8     54     53      9012 x 15750       23.8 per row,     1.7 MB      0 new,     53 zero     0.027 sec
+   9      1      1      1860 x 3014        21.7 per row,     0.3 MB      0 new,      1 zero     0.004 sec
+reduce:                  148 x 2812        86.4 per row,     0.1 MB
+select:      0.008 sec  11%
+symbol:      0.034 sec  44%
+matrix:      0.025 sec  32%     114 good, 83.8% zero
+update:      0.003 sec   4%     705 pair, 90.9% elim
+gbasis:      0.077 sec  19%     122 polynomials
+basis:       0.134</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 122 polynomials, 12880 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:         0.126 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   3    654      4        15 x 31           4.9 per row,     0.0 MB      0 new,      4 zero     0.001 sec
+   4    650     24       105 x 276          7.0 per row,     0.0 MB      7 new,     17 zero     0.001 sec
+   5    599    160       952 x 1766        12.4 per row,     0.1 MB     35 new,    125 zero     0.007 sec
+   5    564     80       488 x 1071        18.6 per row,     0.1 MB     40 new,     40 zero     0.006 sec
+   5    722     58       714 x 1442        16.8 per row,     0.1 MB     28 new,     30 zero     0.006 sec
+   5    821     11       335 x 777         18.5 per row,     0.0 MB      7 new,      4 zero     0.003 sec
+   6    804    742      3949 x 5325        29.1 per row,     0.9 MB    173 new,    569 zero     0.056 sec
+   5    932    124      1020 x 1866        25.9 per row,     0.2 MB     44 new,     80 zero     0.012 sec
+   5   1037     26       365 x 749         23.2 per row,     0.1 MB     11 new,     15 zero     0.003 sec
+   6   1095    989      4511 x 5369        37.8 per row,     1.3 MB     86 new,    906 zero     0.041 sec
+   6    686    162      2712 x 4119        31.0 per row,     0.7 MB     25 new,    137 zero     0.016 sec
+   7    726    725      8154 x 9977        36.8 per row,     2.3 MB     52 new,    674 zero     0.098 sec
+   7    404    114      6209 x 8397        31.6 per row,     1.5 MB     10 new,    104 zero     0.038 sec
+   7    372     14      2667 x 3804        33.0 per row,     0.7 MB      0 new,     14 zero     0.012 sec
+   8    358    358     12607 x 15356       33.5 per row,     3.3 MB     22 new,    336 zero     0.067 sec
+   8    180     50     13280 x 16492       30.0 per row,     3.1 MB      2 new,     48 zero     0.043 sec
+   9    148    148     21144 x 25018       30.8 per row,     5.0 MB     12 new,    136 zero     0.084 sec
+   9    100     32     21079 x 24304       27.6 per row,     4.5 MB      2 new,     30 zero     0.062 sec
+  10     84     84     40891 x 45936       27.0 per row,     8.6 MB     12 new,     72 zero     0.160 sec
+  11    100    100     44676 x 49072       27.1 per row,     9.4 MB     12 new,     88 zero     0.190 sec
+  12    100    100     74785 x 80526       25.2 per row,    14.7 MB     10 new,     90 zero     0.350 sec
+  13     82     82    119911 x 126599      23.3 per row,    21.8 MB      6 new,     76 zero     0.556 sec
+  14     46     46    178544 x 186688      21.7 per row,    30.3 MB      2 new,     44 zero     0.689 sec
+  15     16     16    179279 x 185612      20.3 per row,    28.4 MB      2 new,     14 zero     0.586 sec
+  16     16     16    267127 x 274485      19.1 per row,    39.9 MB      2 new,     14 zero     0.926 sec
+  17     16     16    385266 x 393692      18.0 per row,    54.4 MB      2 new,     14 zero     1.340 sec
+  18     16     16    541654 x 551245      17.1 per row,    72.8 MB      2 new,     14 zero     1.999 sec
+  19     16     16    748622 x 759382      16.3 per row,    96.0 MB      2 new,     14 zero     2.824 sec
+  20     16     16   1016803 x 1028870     15.6 per row,   124.9 MB      2 new,     14 zero     4.006 sec
+  21     16     16   1358018 x 1371543     15.0 per row,   160.2 MB      2 new,     14 zero     5.198 sec
+  22     16     16   1787068 x 1802101     14.4 per row,   203.3 MB      2 new,     14 zero     8.754 sec
+  23     16     16   2323130 x 2339632     13.9 per row,   255.5 MB      2 new,     14 zero    11.469 sec
+  24     16     16   2995038 x 3013110     13.4 per row,   318.7 MB      2 new,     14 zero    14.287 sec
+  25     16     16   3823619 x 3843355     13.0 per row,   394.4 MB      2 new,     14 zero    17.683 sec
+  26     16     16   4808356 x 4829889     12.7 per row,   482.8 MB      2 new,     14 zero    23.370 sec
+  27     14     14   5993820 x 6017162     12.3 per row,   586.8 MB      0 new,     14 zero    25.718 sec
+reduce:                  815 x 27060      173.1 per row,     1.1 MB
+select:      0.472 sec   0%
+symbol:     94.774 sec  78%
+matrix:     25.296 sec  21%     622 good, 86.0% zero
+update:      0.118 sec   0%    4439 pair, 97.6% elim
+gbasis:    120.849 sec   1%     526 polynomials
+basis:     209.802</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 526 polynomials, 134896 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:       120.908 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   3   3868      4        15 x 31           4.9 per row,     0.0 MB      0 new,      4 zero     0.004 sec
+   4   3864     31       139 x 422          9.2 per row,     0.0 MB      7 new,     24 zero     0.005 sec
+   5   3777    467      1906 x 2503        25.3 per row,     0.4 MB     79 new,    388 zero     0.026 sec
+   5   2891    383      1518 x 2082        31.5 per row,     0.4 MB    186 new,    197 zero     0.055 sec
+   5   2583    512      1912 x 2130        31.3 per row,     0.5 MB    152 new,    360 zero     0.040 sec
+   4   1918     10       108 x 254         29.4 per row,     0.0 MB      0 new,     10 zero     0.005 sec
+   5   1908    892      2561 x 2242        30.1 per row,     0.6 MB     82 new,    810 zero     0.024 sec
+   5   1358    300      1874 x 2072        28.8 per row,     0.4 MB     14 new,    286 zero     0.009 sec
+   5   1161     16       717 x 937         27.4 per row,     0.2 MB      0 new,     16 zero     0.003 sec
+   6   1145    984      4592 x 4151        32.2 per row,     1.1 MB      8 new,   1001 zero     0.016 sec
+   6    213     18      1477 x 1735        23.1 per row,     0.3 MB      2 new,     16 zero     0.006 sec
+   7    213    108      6281 x 6800        23.2 per row,     1.1 MB      6 new,    104 zero     0.042 sec
+   8    154     75     11704 x 12341       19.7 per row,     1.8 MB      4 new,     71 zero     0.033 sec
+   9    115     47     21199 x 21944       17.3 per row,     2.9 MB      4 new,     43 zero     0.056 sec
+  10    104     48     31913 x 32733       16.2 per row,     4.1 MB      4 new,     44 zero     0.089 sec
+  11     92     48     52724 x 53628       14.9 per row,     6.2 MB      4 new,     44 zero     0.158 sec
+  11     63     16     34519 x 34997       13.8 per row,     3.8 MB      0 new,     16 zero     0.089 sec
+  12     47     13     47993 x 48726       14.6 per row,     5.5 MB      0 new,     13 zero     0.117 sec
+  13     34      8     61737 x 62495       14.0 per row,     6.8 MB      0 new,      8 zero     0.158 sec
+  14     26      2     43007 x 43277       12.2 per row,     4.2 MB      0 new,      2 zero     0.109 sec
+  15     24      2     63533 x 63833       11.8 per row,     6.0 MB      0 new,      2 zero     0.168 sec
+  16     22      2     91386 x 91696       11.0 per row,     8.0 MB      0 new,      2 zero     0.275 sec
+  17     20      2    128825 x 129165      10.7 per row,    11.0 MB      0 new,      2 zero     0.398 sec
+  18     18      2    178193 x 178543      10.1 per row,    14.4 MB      0 new,      2 zero     0.650 sec
+  19     16      2    242489 x 242869       9.9 per row,    19.2 MB      0 new,      2 zero     0.960 sec
+  20     14      2    326464 x 326854       9.4 per row,    24.8 MB      0 new,      2 zero     1.332 sec
+  21     12      2    432457 x 432877       9.3 per row,    32.2 MB      0 new,      2 zero     1.680 sec
+  22     10      2    567986 x 568416       8.9 per row,    40.8 MB      0 new,      2 zero     2.356 sec
+  23      8      2    735046 x 735506       8.8 per row,    52.0 MB      0 new,      2 zero     2.895 sec
+  24      6      2    945182 x 945652       8.5 per row,    64.9 MB      0 new,      2 zero     3.765 sec
+  25      4      2   1200737 x 1201237      8.4 per row,    81.3 MB      0 new,      2 zero     4.898 sec
+  26      2      2   1518363 x 1518873      8.2 per row,   100.2 MB      0 new,      2 zero     8.026 sec
+reduce:                  431 x 1239        43.0 per row,     0.1 MB
+select:      0.165 sec   1%
+symbol:     25.123 sec  88%
+matrix:      3.052 sec  11%     552 good, 86.3% zero
+update:      0.106 sec   0%    4006 pair, 98.9% elim
+gbasis:     28.629 sec   1%     421 polynomials
+basis:      49.143</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 421 polynomials, 17271 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:        28.702 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   3   3195      4        15 x 31           4.9 per row,     0.0 MB      0 new,      4 zero     0.002 sec
+   4   3191     31       205 x 469         20.1 per row,     0.0 MB      0 new,     31 zero     0.002 sec
+   5   3160   2164      4340 x 2664        30.6 per row,     1.0 MB     20 new,   2144 zero     0.022 sec
+   4   1063     55       234 x 366         23.0 per row,     0.0 MB     33 new,     22 zero     0.006 sec
+   3   1128      5        14 x 9            2.4 per row,     0.0 MB      0 new,      5 zero     0.000 sec
+   4   1123    113       436 x 561         16.8 per row,     0.1 MB      5 new,    108 zero     0.003 sec
+   4   1039     39       340 x 486         17.4 per row,     0.0 MB      7 new,     32 zero     0.003 sec
+   5   1022    400      1600 x 1552        23.7 per row,     0.3 MB     87 new,    314 zero     0.019 sec
+   4    767    190       776 x 823         17.7 per row,     0.1 MB     75 new,    115 zero     0.010 sec
+   3    858     20        83 x 106          9.2 per row,     0.0 MB      0 new,     20 zero     0.002 sec
+   4    838    408      1106 x 839         13.0 per row,     0.1 MB      9 new,    399 zero     0.004 sec
+   4    483     57       349 x 357         13.9 per row,     0.0 MB      1 new,     56 zero     0.001 sec
+   5    435    368      1693 x 1452        15.4 per row,     0.2 MB      0 new,    369 zero     0.003 sec
+   6     67     47      1062 x 1105        11.1 per row,     0.1 MB      0 new,     47 zero     0.002 sec
+   7     20      6       667 x 737         10.3 per row,     0.1 MB      0 new,      6 zero     0.001 sec
+   8     14      4      1270 x 1318         8.1 per row,     0.1 MB      0 new,      4 zero     0.002 sec
+   9     10      4      1667 x 1739         8.7 per row,     0.1 MB      0 new,      4 zero     0.002 sec
+  10      6      6      4103 x 4187         7.4 per row,     0.2 MB      0 new,      6 zero     0.007 sec
+reduce:                  236 x 364         17.8 per row,     0.0 MB
+select:      0.015 sec  10%
+symbol:      0.018 sec  12%
+matrix:      0.025 sec  17%     237 good, 94.0% zero
+update:      0.031 sec  21%    3921 pair, 97.5% elim
+gbasis:      0.149 sec  50%     177 polynomials
+basis:       0.183</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 177 polynomials, 2643 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:         0.186 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">-&gt; MGb</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> domain: mod_int_cof</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">F4 algorithm</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">prime=65521</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> deg  pairs  taken         matrix                                        found
+   3   1310      8        51 x 105          7.7 per row,     0.0 MB      1 new,      7 zero     0.001 sec
+   4   1297    537      1311 x 900          9.7 per row,     0.1 MB     17 new,    520 zero     0.004 sec
+   3    746     20        64 x 97           7.1 per row,     0.0 MB     17 new,      3 zero     0.002 sec
+   2    640      2        10 x 8            3.0 per row,     0.0 MB      0 new,      2 zero     0.000 sec
+   3    638     77       222 x 205          5.2 per row,     0.0 MB      7 new,     70 zero     0.001 sec
+   4    496    171       678 x 570          9.7 per row,     0.1 MB     21 new,    150 zero     0.002 sec
+   3    267     24        89 x 84           7.7 per row,     0.0 MB      5 new,     19 zero     0.001 sec
+   3    211     15        61 x 68           6.6 per row,     0.0 MB      6 new,      9 zero     0.001 sec
+   3    190     40       142 x 122          5.2 per row,     0.0 MB      0 new,     40 zero     0.000 sec
+   4    150    119       436 x 347          6.5 per row,     0.0 MB      2 new,    117 zero     0.001 sec
+   3     47     16        65 x 58           4.0 per row,     0.0 MB      0 new,     16 zero     0.000 sec
+   5     31     31       474 x 467          4.7 per row,     0.0 MB      0 new,     31 zero     0.001 sec
+reduce:                   63 x 88           4.6 per row,     0.0 MB
+select:      0.004 sec  16%
+symbol:      0.002 sec  10%
+matrix:      0.004 sec  17%      76 good, 92.8% zero
+update:      0.004 sec  19%    1060 pair, 95.6% elim
+gbasis:      0.023 sec  54%      42 polynomials
+basis:       0.029</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> 42 polynomials, 127 terms</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output"> total time:         0.058 sec</Text-field>
+</Output>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">------------------------------</Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEncmVzX2diRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2Ji1GIzZicC1GLDYlUSN2MkYnRi9GMi1GNjYtUSIsRidGOUY7L0Y/RjFGQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZOUSwwLjMzMzMzMzNlbUYnLUYsNiVRI3YxRidGL0YyRlctRiM2KC1GIzYmLUYsNiVRI2wyRidGL0YyLUY2Nj9RMSZJbnZpc2libGVUaW1lcztGJy8lJ2ZhbWlseUdRMFRpbWVzfk5ld35Sb21hbkYnLyUlc2l6ZUdRIzEyRicvJSVib2xkR0Y9L0YwRj0vJSp1bmRlcmxpbmVHRj0vJS5zdHJpa2V0aHJvdWdoR0Y9LyUqc3Vic2NyaXB0R0Y9LyUsc3VwZXJzY3JpcHRHRj0vJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV1GJy8lJ29wYXF1ZUdGPS8lK2V4ZWN1dGFibGVHRj0vJSlyZWFkb25seUdGPS8lKWNvbXBvc2VkR0Y9LyUqY29udmVydGVkR0Y9LyUraW1zZWxlY3RlZEdGPS8lLHBsYWNlaG9sZGVyR0Y9LyU2c2VsZWN0aW9uLXBsYWNlaG9sZGVyR0Y9RjlGO0Y+RkBGQkZERkZGSEZlbi9GTkZmbi1GLDYlUSN5MUYnRi9GMkY5LUY2Ni1RJyZwbHVzO0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EsMC4yMjIyMjIyZW1GJy9GTkZlci1GIzYoLUkjbW5HRiQ2JFEmNjU1MjBGJ0Y5RmNvRmBvRmNvLUYsNiVRI3kyRidGL0YyRjlGYXJGaXJGOUZXLUYjNiwtRiM2JkZpckZjby1JJW1zdXBHRiQ2JS1GLDYlUSNsMUYnRi9GMi1GanI2JFEiMkYnRjkvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnRjlGYXItRiM2KEZpckZjb0Znc0Zjb0Zgb0Y5RmFyLUYjNiZGZ3NGY29GXXNGOUZhci1GIzYmRmpzRmNvLUZlczYlRmBvRmpzRl10RjlGYXItRiM2KC1GanI2JFEmNjU1MTdGJ0Y5RmNvRmBvRmNvRl1zRjlGOUZXLUYjNiYtRiM2JkZnc0Zjb0ZeckY5RmFyRmpzRjlGVy1GIzYoLUYjNigtRmpyNiRRJjMyNzYxRidGOUZjb0Znc0Zjby1GLDYlUSN1MkYnRi9GMkY5RmFyLUYjNiZGYG9GY29GaHVGOUZhci1GIzYmRmh1RmNvRl1zRjlGOUZXLUYjNiZGaHVGY28tRiw2JVEjeDJGJ0YvRjJGOUZXLUYjNiwtRiM2Ji1GLDYlUSN1MUYnRi9GMkZjb0ZodUY5RmFyLUYjNiZGaXJGY28tRmVzNiVGaHVGanNGXXRGOUZhckZgb0Zhci1GIzYmRmlyRmNvRl5yRjlGYXJGXXNGOUZXLUYjNiZGY3VGYXItRiM2JkZodUZjb0ZeckY5RjlGVy1GIzYmRmh1RmNvLUYsNiVRI3gxRidGL0YyRjlGVy1GIzYsLUYjNiYtRmpyNiRRJjQ5MTQyRidGOUZjb0Zkc0Y5RmFyLUYjNihGanNGY29GZ3NGY29GYG9GOUZhci1GIzYmRmlyRmNvRmZ0RjlGYXItRiM2KC1GanI2JFEiNkYnRjlGY29GYG9GY29GXXNGOUZhci1GZXM2JUZdc0Zqc0ZddEY5RlctRiM2KC1GIzYoRmV1RmNvRmdzRmNvRmF2RjlGYXItRiM2JkZgb0Zjb0ZhdkY5RmFyLUYjNiZGYXZGY29GXXNGOUY5RlctRiM2KC1GIzYoRmV1RmNvRmdzRmNvRmh2RjlGYXItRiM2JkZgb0Zjb0ZodkY5RmFyLUYjNiZGaHZGY29GXXNGOUY5RlctRiM2LC1GIzYmLUZqcjYkUSYxNjM4MUYnRjlGY29GZHNGOUZhci1GIzYmRmdzRmNvRmBvRjlGYXJGY3hGYXItRiM2KC1GanI2JFEiM0YnRjlGY29GYG9GY29GXXNGOUZhci1GIzYmRl5yRmNvRl1zRjlGOUZXLUYjNigtRiM2KEZldUZjb0Znc0Zjb0Znd0Y5RmFyLUYjNiZGYG9GY29GZ3dGOUZhci1GIzYmRmd3RmNvRl1zRjlGOUZXLUYjNiZGaHZGY29GYXZGOUZXLUYjNiZGXnlGYXItRiM2JkZhdkZjb0ZeckY5RjlGVy1GIzYqLUYjNiYtRmpyNiRRJTgxOTBGJ0Y5RmNvRmRzRjlGYXItRiM2JkZldUZjb0ZmdEY5RmFyLUYjNiZGYXZGY29GZ3dGOUZhci1GIzYmLUZqcjYkUSYzMjc2MEYnRjlGY28tRmVzNiVGYXZGanNGXXRGOUY5RlctRiM2Li1GZXM2JUZodkZqc0ZddEZhckZdd0Zhci1GIzYmRmlyRmNvRmdzRjlGYXItRiM2JkZpckZjb0Zgb0Y5RmFyRl93RmFyLUYjNiZGaXJGY29GXXNGOUY5RlctRiM2JkZmeUZhci1GIzYmRmh2RmNvRl5yRjlGOUZXLUYjNiZGaHZGY29GZ3dGOUZXLUYjNigtRiM2Ji1GanI2JFEmNDkxNDFGJ0Y5RmNvRmRzRjlGYXItRmVzNiVGXnJGanNGXXRGYXItRmpyNiRRJjY1NTE5RidGOUY5RlctRiM2JkZeW2xGYXItRiM2JkZnd0Zjb0ZeckY5RjlGVy1GIzYoLUYjNiYtRmpyNiRRJjE2MzgwRidGOUZjb0Zkc0Y5RmFyLUZlczYlRmd3RmpzRl10RmFyLUZqcjYkUSIxRidGOUY5RlctRiM2Ki1GZXM2JUZgb0ZnekZddEZhci1GIzYmRmVebEZjb0Zgb0Y5RmFyRl5yRmFyRmRdbEY5RlctRiM2Ji1GIzYmRmZ0RmNvRmh1RjlGYXItRiM2JkZpckZjb0ZodUY5RjlGVy1GIzYsLUYjNihGZXVGY29GZ3NGY29GZnRGOUZhci1GIzYmRmZ0RmNvRl1zRjlGYXItRiM2JkZnXGxGY29GZ3NGOUZhckZgb0ZhckZfd0Y5RlctRiM2Ji1GIzYmRmZ0RmNvRmF2RjlGYXItRiM2JkZpckZjb0ZhdkY5RjlGVy1GIzYmLUYjNiZGZnRGY29GaHZGOUZhci1GIzYmRmlyRmNvRmh2RjlGOUZXLUYjNiYtRiM2JkZmdEZjb0Znd0Y5RmFyLUYjNiZGaXJGY29GZ3dGOUY5RlctRiM2Li1GIzYmRmRzRmNvRmBvRjlGYXItRiM2KEZpckZjb0Znc0Zjb0ZmdEY5RmFyLUYjNiZGZ3pGY29GZ3NGOUZhci1GIzYmLUZqcjYkUSY2NTUxNUYnRjlGY29GYG9GOUZhci1GIzYmRmd4RmNvRl5yRjlGYXItRiM2JkZlXmxGY29GXXNGOUY5RlctRiM2Ki1GIzYmRl13RmNvRmBvRjlGYXItRiM2Ji1GanI2JFEmNTczMzFGJ0Y5RmNvRmRzRjlGYXItRiM2JkZnXGxGY29GZnRGOUZhckZlXGxGOUZXLUYjNjAtRiM2KEZgX2xGY29GZ3NGY29GZnRGOUZhci1GIzYmRmBvRmNvRmpcbEY5RmFyLUYjNiZGZV5sRmNvRl13RjlGYXItRiM2JkZgekZjb0Znc0Y5RmFyLUYjNiZGZXVGY29GYG9GOUZhci1GIzYmRmV1RmNvRl5yRjlGYXItRiM2JkZldUZjb0Zdc0Y5RjlGVy1GIzYoLUZlczYlRmdzRmd6Rl10RmFyLUYjNiYtRmpyNiRRJjY1NTEzRidGOUZjb0Znc0Y5RmFyLUYjNiZGYGVsRmNvRl5yRjlGOUZXLUYjNiYtRiM2JkZkc0Zjb0ZodUY5RmFyLUYjNiZGanRGY29GaHVGOUY5RlctRiM2Ji1GIzYmRmRzRmNvRmF2RjlGYXItRiM2JkZqdEZjb0ZhdkY5RjlGVy1GIzYmLUYjNiZGZHNGY29GaHZGOUZhci1GIzYmRmp0RmNvRmh2RjlGOUZXLUYjNiYtRiM2JkZkc0Zjb0Znd0Y5RmFyLUYjNiZGanRGY29GZ3dGOUY5RlctRiM2MC1GIzYmRmdzRmNvRl13RjlGYXItRiM2Ji1GanI2JFEmNDkxNDBGJ0Y5RmNvRmRzRjlGYXJGYHRGYXJGZHRGYXItRiM2KEZlXmxGY29GYG9GY29GXXNGOUZhci1GIzYmRmlyRmNvRmpcbEY5RmFyRmlyRjlGVy1GIzYuRmJibEZhci1GIzYmRmdzRmNvRmpcbEY5RmFyLUYjNiZGanRGY29GXXdGOUZhci1GIzYmRmpzRmNvRmdzRjlGYXItRiM2JkZqc0Zjb0Zgb0Y5RmFyLUYjNiZGanNGY29GXXNGOUY5RlctRmVzNiVGaHVGZ3pGXXRGVy1GZXM2JUZhdkZnekZddEZncEZhcUY5RjkvJSVvcGVuR1EnJmxzcWI7RicvJSZjbG9zZUdRJyZyc3FiO0YnRjk=">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSdyZXNfZ2JHRig3TEkjdjJHRihJI3YxR0YoLCgqJkkjbDJHRigiIiJJI3kxR0YoRjRGNComRjNGNEkjeTJHRihGNCImP2InRjhGNCwsKiRJI2wxR0YoIiIjRjgqJkY7RjRGM0Y0RjgqJkY7RjRGN0Y0RjQqJEYzRjxGPEY2IiY8YicsJiomRjtGNEY1RjRGNEY8RjQsKComRjtGNEkjdTJHRihGNCImaEYkKiZGM0Y0RkVGNEY0KiZGRUY0RjdGNEY0KiZGRUY0SSN4MkdGKEY0LCwqJkkjdTFHRihGNEZFRjRGNCokRkVGPEY4RjNGNEY1RjhGN0Y0LCZGREZGKiZGRUY0RjVGNEY0KiZGRUY0SSN4MUdGKEY0LCxGOiImVSJcRj1GPEY/RjhGNiIiJyokRjdGPEY0LCgqJkY7RjRGSkY0RkYqJkYzRjRGSkY0RjQqJkZKRjRGN0Y0RjQsKComRjtGNEZNRjRGRiomRjNGNEZNRjRGNComRk1GNEY3RjRGNCwsRjoiJiJRO0Y9RjRGP0Y4RjYiIiQqJkY1RjRGN0Y0RjQsKComRjtGNEZSRjRGRiomRjNGNEZSRjRGNComRlJGNEY3RjRGNComRk1GNEZKRjQsJkZYRkYqJkZKRjRGNUY0RjQsKkY6IiUhPilGP0ZGKiZGUkY0RkpGNEY0KiRGSkY8IiZnRiQsLiokRk1GPEY0Rk5GNEY7RjhGM0Y4RjVGOEY3RjgsJkZmbkZGKiZGTUY0RjVGNEY0KiZGTUY0RlJGNCwoRjoiJlQiXCokRjVGPEY0IiY+YidGNCwmRl5vRkYqJkZSRjRGNUY0RjQsKEY6IiYhUTsqJEZSRjxGNEY0RjQsKiokRjNGW29GNEYzRmFwRjVGNEY3RjgsJiomRjNGPEZFRjRGNEZFRjgsLComRjtGNEYzRjxGRiomRjNGPEY3RjRGNEY7RmhvRjNGNEY1RjgsJiomRjNGPEZKRjRGNEZKRjgsJiomRjNGPEZNRjRGNEZNRjgsJiomRjNGPEZSRjRGNEZSRjgsLiomRjtGPEYzRjRGNEZccUY4RjtGW29GMyImOmInRjVGVUY3RmFwLCoqJkYzRjRGRUY8RjRGOiImSnQmRj9GaG9GZ29GaG8sMEZccUZlcComRjNGNEZKRjxGNEZORmFwRjtGam5GM0ZGRjVGRkY3RkYsKCokRjtGW29GNEY7IiY4YidGNUZeciwmKiZGO0Y8RkVGNEY0RkVGQCwmKiZGO0Y8RkpGNEY0RkpGQCwmKiZGO0Y8Rk1GNEY0Rk1GQCwmKiZGO0Y8RlJGNEY0RlJGQCwwKiZGO0Y0RkVGPEY0RjoiJlMiXEY9RjhGP0Y8RjZGYXBGZ29GOEY4RjQsLkZccUY4KiZGO0Y0RkpGPEY0Rk5GQEY7RjxGM0Y8RjdGPCokRkVGW28qJEZKRltvNyNGLg==</Equation></Text-field>
+</Output></CodeEditor-ExecGroup></Presentation-Block><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L4" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbW9HRiQ2LVEifkYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0Y0LyUqc3ltbWV0cmljR0Y0LyUobGFyZ2VvcEdGNC8lLm1vdmFibGVsaW1pdHNHRjQvJSdhY2NlbnRHRjQvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZDLyUrZXhlY3V0YWJsZUdGNEYv">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbW9HRiQ2LVEifkYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0Y0LyUqc3ltbWV0cmljR0Y0LyUobGFyZ2VvcEdGNC8lLm1vdmFibGVsaW1pdHNHRjQvJSdhY2NlbnRHRjQvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZDLyUrZXhlY3V0YWJsZUdGNEYv</Equation></Text-field>
+</Input>
+</Group></Presentation-Block>
+</Worksheet>
