@@ -1,3 +1,4 @@
+print("This is not a single pendulum, but a double pendulum!!!!");
 vars := [x1, y1, u1, v1, x2, y2, u2, v2];
 p := [
     u1, 
