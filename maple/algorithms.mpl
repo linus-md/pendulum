@@ -6,43 +6,63 @@ partial := proc(q, p, vars)
 end proc;
 
 # This algorithm adds new elements to the Groebner basis
-algorithm_gb := proc(qs, p, vars) 
+algorithm_gb := proc(qs, p, vars, char:=65521) 
 	local G, gs, i, tord; 
 	i := 0; 
 	tord := tdeg(op(vars)); 
 	gs := qs; 
-	G := Basis(qs, tord, characteristic=65521); 
+	G := Basis(qs, tord, characteristic=char); 
 	while true do
 		i := i + 1;
-		gs := map(g ->  NormalForm(partial(g, p, vars), G, tord), gs, characteristic=65521);
+		gs := map(g ->  NormalForm(partial(g, p, vars), G, tord), gs, characteristic=char);
 		gs := remove(`=`, gs, 0);
 		if nops(gs) = 0 then
 			return G;
 		fi;
 		G := [op(G), op(gs)]; 
-		G := Basis(G, tord, characteristic=65521); 
+		G := Basis(G, tord, characteristic=char); 
 		end do; 
 	return G; 
 end proc;
 
 
 # This algorithm adds new elements to the ideal
-algorithm_i := proc(qs, p, vars) 
+algorithm_i := proc(qs, p, vars, char:=65521) 
 	local S, G, gs, i, tord; 
 	i := 0; 
 	tord := tdeg(op(vars)); 
 	gs := qs; 
     S := gs;
-	G := Basis(S, tord, characteristic=65521); 
+	G := Basis(S, tord, characteristic=char); 
 	while true do
 		i := i + 1;
-		gs := map(g ->  NormalForm(partial(g, p, vars), G, tord), gs, characteristic=65521);
+		gs := map(g ->  NormalForm(partial(g, p, vars), G, tord), gs, characteristic=char);
 		gs := remove(`=`, gs, 0);
 		if nops(gs) = 0 then
 			return G;
 		fi;
 		S := [op(S), op(gs)]; 
-		G := Basis(S, tord, characteristic=65521); 
+		G := Basis(S, tord, characteristic=char); 
+		end do; 
+	return G; 
+end proc;
+
+algorithm_i_0 := proc(qs, p, vars) 
+	local S, G, gs, i, tord; 
+	i := 0; 
+	tord := tdeg(op(vars)); 
+	gs := qs; 
+    S := gs;
+	G := Basis(S, tord); 
+	while true do
+		i := i + 1;
+		gs := map(g ->  NormalForm(partial(g, p, vars), G, tord), gs);
+		gs := remove(`=`, gs, 0);
+		if nops(gs) = 0 then
+			return G;
+		fi;
+		S := [op(S), op(gs)]; 
+		G := Basis(S, tord); 
 		end do; 
 	return G; 
 end proc;

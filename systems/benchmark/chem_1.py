@@ -15,12 +15,19 @@ def chem_1():
           R('0'),
           R('0')]
 
-    qi = [R('x1 + x2 - T1'),
-          R('x3 + x4 - T2')]
+    qi = [R('x1 - x2 - 1'),
+          R('x3 - x4 - 1')]
     return qi, pi
 
 if __name__ == '__main__':
     from core.main import algorithm
+    from sage.all import ideal
     qi, pi = chem_1()
     result = algorithm(qi, pi)
-    print(result)
+    pc = ideal(result).primary_decomposition()[0].gens()
+    print(f"Result: {result}")
+    print(f"Primary decomposition: {pc}")
+    print("GB is PCD: ",sorted(pc) == sorted(result))
+
+    for p in pi:
+      print(p, p in ideal(result))
