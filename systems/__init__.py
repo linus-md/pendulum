@@ -8,7 +8,7 @@ from .hard.kepler_half import kepler_half
 from .benchmark.chem_1 import chem_1
 from .benchmark.chem_4 import chem_4
 from .benchmark.chem_b2 import chem_b2
-from .benchmark.chem_fake_1 import chem_fake
+from .benchmark.chem_fake import chem_fake
 
 
 from .hard.triple_simple import triple_simple
