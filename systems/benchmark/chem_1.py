@@ -21,6 +21,7 @@ def chem_1():
 
 if __name__ == '__main__':
     from core.main import algorithm
+    from sage.all import ideal
     qi, pi = chem_1()
     result = algorithm(qi, pi)
     print(result)
