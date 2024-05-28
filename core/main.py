@@ -24,8 +24,8 @@ def algorithm(qi, pi):
             i += 1
             logger.info(f'Iteration {i} - {datetime.datetime.now()}')
             G = ideal(list(set(G + qi))).groebner_basis()
-            logger.info('Algorithm Exp ended at - {}'.format(datetime.datetime.now()))
         else:
+            logger.info('Algorithm 1 ended at - {}'.format(datetime.datetime.now()))
             return G
 
 def algorithm_0(qi, pi):
@@ -44,7 +44,7 @@ def algorithm_0(qi, pi):
             logger.info(f'Iteration {i} - {datetime.datetime.now()}')
         else:
             # This gets computed eventhough we compute it for the reduction above...
-            logger.info('Algorithm Exp ended at - {}'.format(datetime.datetime.now()))
+            logger.info('Algorithm 0 ended at - {}'.format(datetime.datetime.now()))
             return ideal(I).groebner_basis()
 
 
@@ -74,6 +74,5 @@ if __name__ == '__main__':
     import timeit
     
     n = 1
-    qi, pi = chem_fake()
-    execution_time = timeit.timeit(lambda: algorithm_exp(qi, pi), number=n)
-    print(execution_time/n)
+    qi, pi = single()
+    res = algorithm(qi, pi)
