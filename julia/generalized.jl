@@ -5,7 +5,7 @@ using AbstractAlgebra: derivative
 using AlgebraicSolving
 
 
-function partial(q, ps)
+function partial(q, ps, R, S)
     partial_q = 0
     for (i, pi) in enumerate(ps)
         partial_q =  partial_q + pi * derivative(q, i)
@@ -13,12 +13,12 @@ function partial(q, ps)
     return partial_q
 end;
 
-function naive_algorithm(q, ps)
+function generalized_algorithm(qs, ps, R, S)
     S = q
     g = q
     G = groebner_basis(Ideal(S))
     while true
-        g = [partial(gi, ps) for gi in g]
+        g = [partial(gi, ps, R, S) for gi in g]
         g = [AlgebraicSolving.normal_form(gi, Ideal(G)) for gi in g]
         if all(g .== 0)
             return G
@@ -29,15 +29,19 @@ function naive_algorithm(q, ps)
     end    
 end;
 
-R, (x, y, u, v, l) = polynomial_ring(GF(65521),["x","y","u","v","l"], ordering=:degrevlex)
+R, (x, y, u, v, l, dl) = polynomial_ring(GF(65521),["x","y","u","v","l","dl"], 
+                                         ordering=:degrevlex)
 ps = [
     u,
     v, 
     l*x,
     l*y - 1,
+    dl,
     0
 ] 
-
 q = [x^2 + y^2 - 1]
-G = naive_algorithm(q, ps)
-println(G)
+
+#S, (x, y, u, v, l) = polynomial_ring(GF(65521),["x","y","u","v","l"],
+#                                     ordering=:degrevlex)
+
+res = generalized_algorithm(q, ps, R, R) # RR !

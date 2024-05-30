@@ -16,7 +16,7 @@ end;
 function naive_algorithm(qs, ps)
     S = qs
     g = qs
-    G = groebner_basis(Ideal(S))
+    G = sig_groebner_basis(Ideal(S))
     while true
         g = [partial(gi, ps) for gi in g]
         g = [AlgebraicSolving.normal_form(gi, Ideal(G)) for gi in g]
@@ -24,20 +24,12 @@ function naive_algorithm(qs, ps)
             return G
         else
             append!(S, g)
-            G = groebner_basis(Ideal(S))
+            G = sig_groebner_basis(Ideal(S))
         end
     end    
 end;
 
-R, (x, y, u, v, l) = polynomial_ring(GF(65521),["x","y","u","v","l"], ordering=:degrevlex)
-ps = [
-    u,
-    v, 
-    l*x,
-    l*y - 1,
-    0
-] 
-
-q = [x^2 + y^2 - 1]
-G = naive_algorithm(q, ps)
-println(G)
+R, (x1, x2, x3, x4, x5) = polynomial_ring(GF(17), ["x$i" for i in 1:5])
+F = [x3, x4, x1, x2-1, 0*x1]
+F_hom = AlgebraicSolving._homogenize(F)
+sol = sig_groebner_basis(F_hom)
