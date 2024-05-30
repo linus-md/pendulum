@@ -4,6 +4,9 @@ Pkg.activate("/Users/linussommer/signatures")
 using AbstractAlgebra: derivative
 using AlgebraicSolving
 
+function natural(G)
+    return [elem[2] for elem in G]
+end;
 
 function partial(q, ps)
     partial_q = 0
@@ -13,23 +16,36 @@ function partial(q, ps)
     return partial_q
 end;
 
-function naive_algorithm(qs, ps)
-    S = qs
+function naive_sig_algorithm(qs, ps)
+    S = AlgebraicSolving._homogenize(qs)
     g = qs
-    G = sig_groebner_basis(Ideal(S))
+    G = sig_groebner_basis(S)
     while true
         g = [partial(gi, ps) for gi in g]
-        g = [AlgebraicSolving.normal_form(gi, Ideal(G)) for gi in g]
+        g = [AlgebraicSolving.normal_form(gi, Ideal(natural(G))) for gi in g]
         if all(g .== 0)
             return G
         else
             append!(S, g)
-            G = sig_groebner_basis(Ideal(S))
+            println(S)
+            # This introduces problems with to many variables
+            S = AlgebraicSolving._homogenize(S)
+            G = sig_groebner_basis(S)
         end
     end    
+    return G
 end;
 
-R, (x1, x2, x3, x4, x5) = polynomial_ring(GF(17), ["x$i" for i in 1:5])
-F = [x3, x4, x1, x2-1, 0*x1]
-F_hom = AlgebraicSolving._homogenize(F)
-sol = sig_groebner_basis(F_hom)
+
+R, (x1, x2, x3, x4, x5) = polynomial_ring(GF(65521),["x$i" for i in 1:5], ordering=:degrevlex)
+ps = [
+    x3,
+    x4, 
+    x5*x1,
+    x5*x2 - 1,
+    0
+] 
+
+qs = [x1^2 + x2^2 - 1]
+
+res = naive_sig_algorithm(qs, ps)
