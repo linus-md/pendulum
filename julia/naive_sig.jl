@@ -5,7 +5,7 @@ using AbstractAlgebra: derivative
 using AlgebraicSolving
 
 function natural(G)
-    return [elem[2] for elem in G]
+    return [sigpair[2] for sigpair in G]
 end;
 
 function partial(q, ps)
