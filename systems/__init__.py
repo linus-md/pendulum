@@ -10,6 +10,7 @@ from .benchmark.chem_4 import chem_4
 from .benchmark.chem_b2 import chem_b2
 from .benchmark.chem_fake import chem_fake
 
+from .benchmark.parabola import parabola
 
 from .hard.triple_simple import triple_simple
 from .hard.triple_full import triple_full
