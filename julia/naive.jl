@@ -4,6 +4,9 @@ Pkg.activate("/Users/linussommer/signatures")
 using AbstractAlgebra: derivative
 using AlgebraicSolving
 
+# This is a Julia implementation of the naive algorithm.
+# See also the Maple and Python/Sage implementation.
+# This adds to the Gröbner basis and not the Ideal.
 
 function partial(q, ps)
     partial_q = 0
@@ -41,3 +44,4 @@ ps = [
 q = [x^2 + y^2 - 1]
 G = naive_algorithm(q, ps)
 println(G)
+println(length(G) == 11) # small sanity check

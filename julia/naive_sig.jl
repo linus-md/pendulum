@@ -1,21 +1,22 @@
-# TODO watch out with S=System / S=Subring notation
-
 using Pkg
 Pkg.activate("/Users/linussommer/signatures")
 
 using AbstractAlgebra: derivative
 using AlgebraicSolving
 
+# This is a first implementation of a signature based algorithm.
+# It just substitutes the signature methods into the naive algorithm.
+# Some homogenization is necessary.
+
+# TODO watch out with S=System / S=Subring notation
+
 function natural(G)
+    # Return only the polynomial parts of the sigpairs
     return [sigpair[2] for sigpair in G]
 end;
 
-function dehomogenize(S, R, var)
-    return G
-end
-
 function rehomogenize(S, R, var)
-    # TODO split this up
+    # TODO split this up into removing of x_{n+1} and homogenizing again
     S_new = []
     for s in S
         if parent(s) != R
@@ -42,12 +43,14 @@ function naive_sig_algorithm(qs, ps, R, var)
     G = sig_groebner_basis(S)
     while true
         g = [partial(gi, ps) for gi in g]
+        # This does not use signatures
         g = [AlgebraicSolving.normal_form(gi, Ideal(natural(G))) for gi in g]
         if all(g .== 0)
             return G
         else
             append!(S, g)
             S = rehomogenize(S, R, var)
+            # What happends to the previously computed signatures?
             G = sig_groebner_basis(S)
         end
     end    
