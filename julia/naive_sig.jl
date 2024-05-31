@@ -1,3 +1,5 @@
+# TODO watch out with S=System / S=Subring notation
+
 using Pkg
 Pkg.activate("/Users/linussommer/signatures")
 
@@ -8,6 +10,24 @@ function natural(G)
     return [sigpair[2] for sigpair in G]
 end;
 
+function dehomogenize(S, R, var)
+    return G
+end
+
+function rehomogenize(S, R, var)
+    # TODO split this up
+    S_new = []
+    for s in S
+        if parent(s) != R
+            push!(S_new, s(var..., 1))
+        else
+            push!(S_new, s)
+        end
+    end
+    S_new = identity.(S_new) # this is necessary because of the vector type...?
+    return AlgebraicSolving._homogenize(S_new)
+end;
+
 function partial(q, ps)
     partial_q = 0
     for (i, pi) in enumerate(ps)
@@ -16,7 +36,7 @@ function partial(q, ps)
     return partial_q
 end;
 
-function naive_sig_algorithm(qs, ps)
+function naive_sig_algorithm(qs, ps, R, var)
     S = AlgebraicSolving._homogenize(qs)
     g = qs
     G = sig_groebner_basis(S)
@@ -27,12 +47,11 @@ function naive_sig_algorithm(qs, ps)
             return G
         else
             append!(S, g)
-            println(S)
-            # This introduces problems with to many variables
-            S = AlgebraicSolving._homogenize(S)
+            S = rehomogenize(S, R, var)
             G = sig_groebner_basis(S)
         end
     end    
+    G = dehomogenize(G, R, var)
     return G
 end;
 
@@ -48,4 +67,4 @@ ps = [
 
 qs = [x1^2 + x2^2 - 1]
 
-res = naive_sig_algorithm(qs, ps)
+G = naive_sig_algorithm(qs, ps, R, (x1, x2, x3, x4, x5))

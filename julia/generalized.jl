@@ -7,6 +7,7 @@ using AlgebraicSolving
 
 function partial(q, ps, R, S)
     partial_q = 0
+    # need check if dl in pi
     for (i, pi) in enumerate(ps)
         partial_q =  partial_q + pi * derivative(q, i)
     end
