@@ -3,12 +3,12 @@ Pkg.activate("/Users/linussommer/signatures")
 
 using AbstractAlgebra: derivative
 using AlgebraicSolving
+using AlgebraicSolving: _homogenize
 
 # This is a first implementation of a signature based algorithm.
 # It just substitutes the signature methods into the naive algorithm.
 # Some homogenization is necessary.
 
-# TODO watch out with S=System / S=Subring notation
 
 """
     Given a sigset return only the polynomial parts of the sigpairs.
@@ -22,7 +22,7 @@ end;
     evaluate all polynomials at (x1, x2, ..., xn, 1).
 """
 function dehomogenize(system, subring, variables)
-    # TODO deal wioth signatures
+    # TODO deal with signatures
     systemnew = []
     for polynomial in system
         if parent(polynomial) != subring
@@ -31,7 +31,8 @@ function dehomogenize(system, subring, variables)
             push!(systemnew, polynomial)
         end
     end
-    systemnew = identity.(systemnew) # this is necessary because of the vector type...?
+    # This narrows the type form Vector{Any} to Vector{fpMPolyRingElem}
+    systemnew = identity.(systemnew)
     return systemnew
 end
 
@@ -48,23 +49,23 @@ function partial(polynomial, differentials)
 end;
 
 """
-    Given an ideal `I = <polynomials>` compute the Groebner basis of the minimal ideal 
-    `J` s.t. `J` contains `I` and `J` is closed under `partial`.
+    Given an ideal `I = <polynomials>` compute the Groebner basis of the 
+    minimal ideal `J` s.t. `J` contains `I` and `J` is closed under `partial`.
 """
 function naive_sig_algorithm(polynomials, differrentials, subring, variables)
-    system = AlgebraicSolving._homogenize(polynomials)
+    system = _homogenize(polynomials)
     g = polynomials # This is should also be homogenious maybe?
     groebnerbasis = sig_groebner_basis(system)
     while true
         g = [partial(gi, differrentials) for gi in g]
         # This does not use signatures
-        g = [AlgebraicSolving.normal_form(gi, Ideal(natural(groebnerbasis))) for gi in g]
+        g = [normal_form(gi, Ideal(natural(groebnerbasis))) for gi in g]
         if all(g .== 0)
             return groebnerbasis
         else
             append!(system, g)
             system = dehomogenize(system, subring, variables)
-            system = AlgebraicSolving._homogenize(system)
+            system = _homogenize(system)
             # What happends to the previously computed signatures?
             groebnerbasis = sig_groebner_basis(system)
         end
@@ -73,11 +74,12 @@ function naive_sig_algorithm(polynomials, differrentials, subring, variables)
 end;
 
 
-R, (x1, x2, x3, x4, x5) = polynomial_ring(GF(65521), ["x$i" for i in 1:5], ordering=:degrevlex)
+R, (x1, x2, x3, x4, x5) = polynomial_ring(
+    GF(65521), ["x$i" for i in 1:5], ordering=:degrevlex)
 differrentials = [x3, x4, x5*x1, x5*x2 - 1, R(0)] 
 polynomials = [x1^2 + x2^2 - 1]
 
 G = naive_sig_algorithm(polynomials, differrentials, R, (x1, x2, x3, x4, x5))
 G = natural(G)
 G = dehomogenize(G, R, (x1, x2, x3, x4, x5))
-AlgebraicSolving._homogenize(G)
+G = groebner_basis(Ideal(G))
