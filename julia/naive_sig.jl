@@ -10,37 +10,52 @@ using AlgebraicSolving
 
 # TODO watch out with S=System / S=Subring notation
 
-function natural(G)
-    # Return only the polynomial parts of the sigpairs
-    return [sigpair[2] for sigpair in G]
+"""
+    Given a sigset return only the polynomial parts of the sigpairs.
+"""
+function natural(sigset)
+    return [sigpair[2] for sigpair in sigset]
 end;
 
-function rehomogenize(S, R, var)
+"""
+    Given a system with an additional variable x_{n+1} for homogenization
+    evaluate all polynomials at (x1, x2, ..., xn, 1).
+"""
+function rehomogenize(system, subring, variables)
     # TODO split this up into removing of x_{n+1} and homogenizing again
-    S_new = []
-    for s in S
-        if parent(s) != R
-            push!(S_new, s(var..., 1))
+    # TODO deal wioth signatures
+    systemnew = []
+    for polynomial in system
+        if parent(polynomial) != subring
+            push!(systemnew, polynomial(variables..., 1))
         else
-            push!(S_new, s)
+            push!(systemnew, polynomial)
         end
     end
-    S_new = identity.(S_new) # this is necessary because of the vector type...?
-    return AlgebraicSolving._homogenize(S_new)
+    systemnew = identity.(systemnew) # this is necessary because of the vector type...?
+    return AlgebraicSolving._homogenize(systemnew)
 end;
 
-function partial(q, ps)
-    partial_q = 0
-    for (i, pi) in enumerate(ps)
-        partial_q =  partial_q + pi * derivative(q, i)
+"""
+    Given a system with `n`` variables and `n` polynomial equations define a
+    linear differential operator `patial`.
+"""
+function partial(polynomial, differentials)
+    partial_polynomial = 0
+    for (i, differential) in enumerate(differentials)
+        partial_polynomial += differential * derivative(polynomial, i)
     end
-    return partial_q
+    return partial_polynomial
 end;
 
-function naive_sig_algorithm(qs, ps, R, var)
-    S = AlgebraicSolving._homogenize(qs)
-    g = qs
-    G = sig_groebner_basis(S)
+"""
+    Given an ideal `I = <qs>` compute the Groebner basis of the minimal ideal 
+    `J` s.t. `J` contains `I` and `J` is closed under `partial``.
+"""
+function naive_sig_algorithm(qs, ps, subring, var)
+    system = AlgebraicSolving._homogenize(qs)
+    g = qs # This is should also be homogenious maybe?
+    G = sig_groebner_basis(system)
     while true
         g = [partial(gi, ps) for gi in g]
         # This does not use signatures
@@ -48,13 +63,13 @@ function naive_sig_algorithm(qs, ps, R, var)
         if all(g .== 0)
             return G
         else
-            append!(S, g)
-            S = rehomogenize(S, R, var)
+            append!(system, g)
+            system = rehomogenize(system, subring, var)
             # What happends to the previously computed signatures?
-            G = sig_groebner_basis(S)
+            G = sig_groebner_basis(system)
         end
     end    
-    G = dehomogenize(G, R, var)
+    G = dehomogenize(G, subring, var)
     return G
 end;
 
