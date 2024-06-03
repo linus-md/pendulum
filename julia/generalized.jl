@@ -4,6 +4,7 @@ Pkg.activate("/Users/linussommer/signatures")
 using AbstractAlgebra: derivative
 using AlgebraicSolving
 
+# It is nt clear if this algorithm is correct!!!
 
 function partial(q, ps, R, S)
     partial_q = 0
@@ -15,8 +16,8 @@ function partial(q, ps, R, S)
 end;
 
 function generalized_algorithm(qs, ps, R, S)
-    S = q
-    g = q
+    S = qs
+    g = qs
     G = groebner_basis(Ideal(S))
     while true
         g = [partial(gi, ps, R, S) for gi in g]
