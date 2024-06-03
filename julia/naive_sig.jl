@@ -49,33 +49,33 @@ function partial(polynomial, differentials)
 end;
 
 """
-    Given an ideal `I = <qs>` compute the Groebner basis of the minimal ideal 
+    Given an ideal `I = <polynomials>` compute the Groebner basis of the minimal ideal 
     `J` s.t. `J` contains `I` and `J` is closed under `partial``.
 """
-function naive_sig_algorithm(qs, ps, subring, var)
-    system = AlgebraicSolving._homogenize(qs)
-    g = qs # This is should also be homogenious maybe?
+function naive_sig_algorithm(polynomials, differrentials, subring, variables)
+    system = AlgebraicSolving._homogenize(polynomials)
+    g = polynomials # This is should also be homogenious maybe?
     G = sig_groebner_basis(system)
     while true
-        g = [partial(gi, ps) for gi in g]
+        g = [partial(gi, differrentials) for gi in g]
         # This does not use signatures
         g = [AlgebraicSolving.normal_form(gi, Ideal(natural(G))) for gi in g]
         if all(g .== 0)
             return G
         else
             append!(system, g)
-            system = rehomogenize(system, subring, var)
+            system = rehomogenize(system, subring, variables)
             # What happends to the previously computed signatures?
             G = sig_groebner_basis(system)
         end
     end    
-    G = dehomogenize(G, subring, var)
+    G = dehomogenize(G, subring, variables)
     return G
 end;
 
 
 R, (x1, x2, x3, x4, x5) = polynomial_ring(GF(65521),["x$i" for i in 1:5], ordering=:degrevlex)
-ps = [
+differrentials = [
     x3,
     x4, 
     x5*x1,
@@ -83,6 +83,6 @@ ps = [
     0
 ] 
 
-qs = [x1^2 + x2^2 - 1]
+polynomials = [x1^2 + x2^2 - 1]
 
-G = naive_sig_algorithm(qs, ps, R, (x1, x2, x3, x4, x5))
+G = naive_sig_algorithm(polynomials, differrentials, R, (x1, x2, x3, x4, x5))
