@@ -33,14 +33,7 @@ function naive_algorithm(qs, ps)
 end;
 
 R, (x, y, u, v, l) = polynomial_ring(GF(65521),["x","y","u","v","l"], ordering=:degrevlex)
-ps = [
-    u,
-    v, 
-    l*x,
-    l*y - 1,
-    0
-] 
-
+ps = [u, v, l*x, l*y - 1, 0] 
 q = [x^2 + y^2 - 1]
 G = naive_algorithm(q, ps)
 println(G)

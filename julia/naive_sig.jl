@@ -58,12 +58,14 @@ function naive_sig_algorithm(polynomials, differrentials, subring, variables)
     groebnerbasis = sig_groebner_basis(system)
     while true
         g = [partial(gi, differrentials) for gi in g]
+        # Without dehomogenizing the result does not correspond to the original algorithm
+        nGB = dehomogenize(natural(groebnerbasis), subring, variables)
         # This does not use signatures
-        g = [normal_form(gi, Ideal(natural(groebnerbasis))) for gi in g]
+        g = [normal_form(gi, Ideal(nGB)) for gi in g]
         if all(g .== 0)
             return groebnerbasis
         else
-            append!(system, g)
+            append!(system, g) # push vs append?
             system = dehomogenize(system, subring, variables)
             system = _homogenize(system)
             # What happends to the previously computed signatures?
