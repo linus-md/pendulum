@@ -19,7 +19,7 @@ def gradient_descent():
     derivatives = [loss.derivative(var) for var in R.gens()][:-4]
     derivatives += [R('0'), R('0'), R('0'), R('0')]
     print(len(derivatives))
-    constraints = (A*A.transpose() - B.transpose()*B).list()
+    constraints = (A.transpose()*A - B*B.transpose()).list()
 
     return derivatives, constraints
 
