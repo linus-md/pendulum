@@ -83,13 +83,19 @@ def algorithm_gen(I, derivatives, S, R):
         return ideal(R, J_S)
 
     def gen_alg(I, derivatives, S, R):
+        i = 0
+        logger.info('Algorithm Gen started')
+        logger.info(f'Iteration {i} - {datetime.datetime.now()}')
         J1 = ideal(I)
         J_S = intersect(J1, R, S)
         J2 = J1 + ideal([partial_gen(f, derivatives, S, R) for f in J_S.gens()])
         while J1 != J2:
+            i += 1
+            logger.info(f'Iteration {i} - {datetime.datetime.now()}')
             J1 = J2
             J_S = intersect(J1, R, S)
             J2 = J1 + ideal([partial_gen(f, derivatives, S, R) for f in J_S.gens()])
+        logger.info('Algorithm Gen ended at - {}'.format(datetime.datetime.now()))
         return J1
     
     return gen_alg(I, derivatives, S, R)
