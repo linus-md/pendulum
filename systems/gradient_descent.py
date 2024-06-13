@@ -1,4 +1,4 @@
-from sage.all import PolynomialRing, QQ, matrix, vector
+from sage.all import PolynomialRing, QQ, matrix, vector, ideal
 
 def gradient_descent():
     R = PolynomialRing(
@@ -18,7 +18,6 @@ def gradient_descent():
 
     derivatives = [loss.derivative(var) for var in R.gens()][:-4]
     derivatives += [R('0'), R('0'), R('0'), R('0')]
-    print(len(derivatives))
     constraints = (A.transpose()*A - B*B.transpose()).list()
 
     return derivatives, constraints
@@ -27,3 +26,5 @@ if __name__ == '__main__':
     from core.main import algorithm
     pi, qi = gradient_descent()
     result = algorithm(qi, pi)
+    for i, eq in enumerate(result):
+        print(i, eq)
