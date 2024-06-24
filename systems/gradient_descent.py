@@ -26,5 +26,5 @@ if __name__ == '__main__':
     from core.main import algorithm
     pi, qi = gradient_descent()
     result = algorithm(qi, pi)
-    for i, eq in enumerate(result):
-        print(i, eq)
+    
+    print(ideal(qi) == ideal(result))
