@@ -26,9 +26,9 @@ def chem_fake():
 
 if __name__ == '__main__':
     import timeit
-    from core.main import algorithm_exp
+    from core.main import algorithm_0
     
     n = 1
     qi, pi = chem_fake()
-    execution_time = timeit.timeit(lambda: algorithm_exp(qi, pi), number=n)
+    execution_time = timeit.timeit(lambda: algorithm_0(qi, pi), number=n)
     print(execution_time/n)

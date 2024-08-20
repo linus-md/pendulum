@@ -13,26 +13,35 @@ def diff_op(qi, pi):
 def algorithm(qi, pi):
     i = 0
     logger.info('Algorithm 1 started')
-    logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+    start_time = datetime.datetime.now()
+    last_time = start_time 
+    logger.info(f'Iteration {i} - {start_time}')
     G = ideal(qi).groebner_basis()
 
     while True:
         qi = [diff_op(qs, pi) for qs in qi]
         qi = [qs.reduce(G) for qs in qi]
 
+
         if any(qs != 0 for qs in qi):
             i += 1
-            logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+            current_time = datetime.datetime.now()
+            time_delta = current_time - last_time
+            last_time = current_time
             G = ideal(list(set(G + qi))).groebner_basis()
+            logger.info(f'Iteration {i} - {time_delta} - {len(G)}')
         else:
-            logger.info('Algorithm 1 ended at - {}'.format(datetime.datetime.now()))
+            end_time = datetime.datetime.now()
+            time_delta = end_time - start_time
+            logger.info('Algorithm 1 ended in - {}'.format(time_delta))
             return G
 
 def algorithm_0(qi, pi):
     I = ideal(qi)  
     i = 0
     logger.info('Algorithm 0 started')
-    logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+    start_time = datetime.datetime.now()
+    logger.info(f'Iteration {i} - {start_time}')
 
     while True:
         qi = [diff_op(qs, pi) for qs in qi]
@@ -41,10 +50,15 @@ def algorithm_0(qi, pi):
         if any(qs != 0 for qs in qi):
             i += 1
             I = I + ideal(qi)
-            logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+            current_time = datetime.datetime.now()
+            time_delta = current_time - start_time
+            
+            logger.info(f'Iteration {i} - {time_delta} - {len(I.gens())}')
         else:
             # This gets computed eventhough we compute it for the reduction above...
-            logger.info('Algorithm 0 ended at - {}'.format(datetime.datetime.now()))
+            end_time = datetime.datetime.now()
+            time_delta = end_time - start_time
+            logger.info('Algorithm 0 ended at - {}'.format(time_delta))
             return ideal(I).groebner_basis()
 
 
@@ -85,18 +99,23 @@ def algorithm_gen(I, derivatives, S, R):
     def gen_alg(I, derivatives, S, R):
         i = 0
         logger.info('Algorithm Gen started')
-        logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+        start_time = datetime.datetime.now()
+        logger.info(f'Iteration {i} - {start_time}')
         J1 = ideal(I)
         J_S = intersect(J1, R, S)
         J2 = J1 + ideal([partial_gen(f, derivatives, S, R) for f in J_S.gens()])
         while J1 != J2:
             i += 1
-            logger.info(f'Iteration {i} - {datetime.datetime.now()}')
+            current_time = datetime.datetime.now()
+            time_delta = current_time - start_time
+            logger.info(f'Iteration {i} - {time_delta}')
             J1 = J2
             J_S = intersect(J1, R, S)
             J2 = J1 + ideal([partial_gen(f, derivatives, S, R) for f in J_S.gens()])
-        logger.info('Algorithm Gen ended at - {}'.format(datetime.datetime.now()))
-        return J1
+        end_time = datetime.datetime.now()
+        time_delta = end_time - start_time
+        logger.info('Algorithm Gen ended at - {}'.format(time_delta))
+        return J1.groebner_basis()
     
     return gen_alg(I, derivatives, S, R)
 
