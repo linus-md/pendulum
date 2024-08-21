@@ -8,6 +8,7 @@ Executing the following code
 
 ```python
 from core.main import algorithm_gb
+from systems.benchmark import single
 qi, pi = single()
 result = algorithm_gb(qi, pi)
 print(result)
