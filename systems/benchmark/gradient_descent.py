@@ -1,4 +1,8 @@
-from sage.all import PolynomialRing, QQ, matrix, vector, ideal
+from sage.rings.rational_field import QQ
+from sage.matrix.constructor import matrix
+from sage.rings.ideal import Ideal as ideal
+from sage.modules.free_module_element import vector
+from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing
 
 def gradient_descent():
     # See example 2.5.7 for reference

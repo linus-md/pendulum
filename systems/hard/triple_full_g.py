@@ -1,4 +1,5 @@
-from sage.all import PolynomialRing, QQ
+from sage.rings.rational_field import QQ
+from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing
 
 def triple_full_g():
       # See example 2.5.2 for reference

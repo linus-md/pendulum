@@ -1,5 +1,9 @@
 import pytest
-from sage.all import PolynomialRing, QQ
+
+import sage.all
+from sage.rings.rational_field import QQ
+from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing
+
 from core.main import _algorithm_gb, _algorithm_ideal, differential_groebner_basis
 from systems.benchmark.single import single
 from systems.benchmark.double import double
@@ -9,7 +13,8 @@ def test_single_pendulum():
     R = PolynomialRing(QQ, 'x, y, u, v, l', order='degrevlex')
     ideal_gens, derivatives = single()
 
-    result = [R('x*l^2 - x'), 
+    result = [
+         R('x*l^2 - x'), 
          R('u*l^2 - u'), 
          R('l^3 + y - 2*l'), 
          R('x^2 - l^2 + 1'), 

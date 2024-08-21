@@ -1,7 +1,7 @@
 import logging
 import datetime
 
-from sage.all import ideal
+from sage.rings.ideal import Ideal as ideal
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

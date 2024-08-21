@@ -1,4 +1,5 @@
-from sage.all import PolynomialRing, QQ
+from sage.rings.rational_field import QQ
+from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing
 
 def chem_4_modified():
     # See example A.1.2 for reference
