@@ -1,4 +1,8 @@
-from sage.all import PolynomialRing, QQ, matrix, vector, ideal
+from sage.rings.rational_field import QQ
+from sage.matrix.constructor import matrix
+from sage.rings.ideal import Ideal as ideal
+from sage.modules.free_module_element import vector
+from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing
 
 def gradient_descent():
     # See example 2.5.7 for reference
@@ -24,7 +28,7 @@ def gradient_descent():
     return derivatives, constraints
 
 if __name__ == '__main__':
-    from core.main import algorithm_gb
-    pi, qi = gradient_descent()
-    result = algorithm_gb(qi, pi)
-    print(ideal(qi) == ideal(result))
+    from core.main import _algorithm_gb
+    derivatives, ideal_gens = gradient_descent()
+    result = _algorithm_gb(ideal_gens, derivatives)
+    print(ideal(ideal_gens) == ideal(result))

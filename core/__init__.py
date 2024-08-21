@@ -1,3 +1,3 @@
 __all__ = ['main']
 
-from .main import algorithm_gb, algorithm_ideal
+from .main import _algorithm_gb, _algorithm_ideal

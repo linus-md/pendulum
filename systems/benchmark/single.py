@@ -1,19 +1,20 @@
-from sage.all import PolynomialRing, QQ
+from sage.rings.rational_field import QQ
+from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing
 
 def single():
     # See example 2.5.1 for reference
     R = PolynomialRing(QQ, 'x, y, u, v, l', order='degrevlex')
-    pi = [R('u'), 
+    derivatives = [R('u'), 
           R('v'), 
           R('l*x'), 
           R('l*y - 1'), 
           R('0')]
     
-    qi = [R('x^2 + y^2 - 1')]
-    return qi, pi
+    ideal_gens = [R('x^2 + y^2 - 1')]
+    return ideal_gens, derivatives
 
 if __name__ == '__main__':
-    from core.main import algorithm_gb
-    qi, pi = single()
-    result = algorithm_gb(qi, pi)
+    from core.main import _algorithm_gb
+    ideal_gens, derivatives = single()
+    result = _algorithm_gb(ideal_gens, derivatives)
     print(result)
