@@ -1,8 +1,7 @@
-from sage.all import PolynomialRing, QQ, GF
-import time
-from core.main import algorithm
+from sage.all import PolynomialRing, GF
 
 def double_ll():
+    # See example 2.5.2 for reference
     R = PolynomialRing(GF(101), 'x1, y1, u1, v1, x2, y2, u2, v2, l1, l2', 
                        order='degrevlex')
     pi = [R('u1'),
@@ -20,10 +19,7 @@ def double_ll():
     return qi, pi
 
 if __name__ == '__main__':
+    from core.main import algorithm
     qi, pi = double_ll()
-    start_time = time.time()
     result = algorithm(qi, pi)
-    end_time = time.time()
-    execution_time = end_time - start_time
-    print("Result:", result)
-    print("Execution Time:", execution_time, "seconds")
+    print(result)

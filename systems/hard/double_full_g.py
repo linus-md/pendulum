@@ -1,6 +1,7 @@
 from sage.all import PolynomialRing, QQ
 
 def double_full_g():
+    # See example 2.5.2 for reference
     R = PolynomialRing(QQ, 'x1, y1, u1, v1, x2, y2, u2, v2, l1, l2, g', 
                        order='degrevlex')
     pi = [R('u1'),

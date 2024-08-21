@@ -1,6 +1,7 @@
 from sage.all import PolynomialRing, QQ
 
 def single():
+    # See example 2.5.1 for reference
     R = PolynomialRing(QQ, 'x, y, u, v, l', order='degrevlex')
     pi = [R('u'), 
           R('v'), 

@@ -1,6 +1,7 @@
 from sage.all import PolynomialRing, QQ, matrix, vector, ideal
 
 def gradient_descent():
+    # See example 2.5.7 for reference
     R = PolynomialRing(
         QQ, [f'a{i}{j} ' for i in range(1, 3) for j in range(1, 3)] \
         + [f'b{i}{j} ' for i in range(1, 3) for j in range(1, 3)] \
@@ -26,5 +27,4 @@ if __name__ == '__main__':
     from core.main import algorithm
     pi, qi = gradient_descent()
     result = algorithm(qi, pi)
-    
     print(ideal(qi) == ideal(result))

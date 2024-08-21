@@ -1,6 +1,6 @@
 ### Differential Gröbner bases
 
-This repository Pontains python/Sage code to compute full differential ideals that arise in the context of DAE systems.
+This repository Pontains Python/Sage code to compute full differential ideals that arise in the context of DAE systems. It is supplementary material to my thesis. Specifically Algorithm 2 and a variant of Algorithm 2 are implemented in this package.
 
 ### Examples
 
@@ -28,7 +28,7 @@ INFO:core.main:Algorithm 1 ended in - 0:00:00.034986
 
 ### Usage
 
-To use this package without installing it modify the following command and execute it in the terminal.
+To use this package without installing it modify the following command and execute it in the terminal. It is necessary to have a working Sage installation.
 
 ```bash
 export PYTHONPATH="${PYTHONPATH}:/user/path/pendulum"

@@ -1,6 +1,7 @@
 from sage.all import PolynomialRing, QQ
 
 def parabola():
+    # See example 2.5.3 for reference
     R = PolynomialRing(QQ, 'p1, p2, p3, v1, v2, v3, l', order='degrevlex')
     pi = [R('v1'), 
           R('v2'), 
@@ -14,7 +15,7 @@ def parabola():
     return qi, pi
 
 if __name__ == '__main__':
-    from core.main import algorithm, algorithm_0
+    from core.main import algorithm
     qi, pi = parabola()
-    result = algorithm_0(qi, pi)
+    result = algorithm(qi, pi)
     print(result)
