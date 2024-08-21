@@ -3,7 +3,7 @@ from sage.all import PolynomialRing, QQ
 def parabola():
     # See example 2.5.3 for reference
     R = PolynomialRing(QQ, 'p1, p2, p3, v1, v2, v3, l', order='degrevlex')
-    pi = [R('v1'), 
+    derivatives = [R('v1'), 
           R('v2'), 
           R('v3'), 
           R('2*l*p1'), 
@@ -11,11 +11,11 @@ def parabola():
           R('- l - 1'),
           R('0')]
     
-    qi = [R('p1^2 + p2^2 - p3')]
-    return qi, pi
+    ideal_gens = [R('p1^2 + p2^2 - p3')]
+    return ideal_gens, derivatives
 
 if __name__ == '__main__':
     from core.main import algorithm_gb
-    qi, pi = parabola()
-    result = algorithm_gb(qi, pi)
+    ideal_gens, derivatives = parabola()
+    result = algorithm_gb(ideal_gens, derivatives)
     print(result)

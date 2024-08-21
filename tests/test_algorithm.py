@@ -7,9 +7,9 @@ from systems.benchmark.chem_1 import chem_1
 
 def test_single_pendulum():
     R = PolynomialRing(QQ, 'x, y, u, v, l', order='degrevlex')
-    qi, pi = single()
+    ideal_gens, derivatives = single()
 
-    g = [R('x*l^2 - x'), 
+    result = [R('x*l^2 - x'), 
          R('u*l^2 - u'), 
          R('l^3 + y - 2*l'), 
          R('x^2 - l^2 + 1'), 
@@ -21,23 +21,23 @@ def test_single_pendulum():
          R('y*l - 1'), 
          R('v')]
     
-    assert algorithm_gb(qi, pi) == g
-    assert algorithm_ideal(qi, pi) == g
+    assert algorithm_gb(ideal_gens, derivatives) == result
+    assert algorithm_ideal(ideal_gens, derivatives) == result
 
 
 def test_simple_double_pendulum():
     R = PolynomialRing(QQ, 'x1, y1, u1, v1, x2, y2, u2, v2', 
                        order='degrevlex')
-    qi, pi = double()
-    g = [R('1')]
+    ideal_gens, derivatives = double()
+    result = [R('1')]
 
-    assert algorithm_gb(qi, pi) == g
-    assert algorithm_ideal(qi, pi) == g
+    assert algorithm_gb(ideal_gens, derivatives) == result
+    assert algorithm_ideal(ideal_gens, derivatives) == result
 
 def test_chem_1():
     R = PolynomialRing(QQ, 'x1, x2, x3, x4, k1, k2, k3, T1, T2', 
                        order='degrevlex')
-    qi, pi = chem_1()
+    ideal_gens, derivatives = chem_1()
 
-    assert algorithm_gb(qi, pi) == qi
-    assert algorithm_ideal(qi, pi) == qi
+    assert algorithm_gb(ideal_gens, derivatives) == ideal_gens
+    assert algorithm_ideal(ideal_gens, derivatives) == ideal_gens

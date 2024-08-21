@@ -25,6 +25,6 @@ def gradient_descent():
 
 if __name__ == '__main__':
     from core.main import algorithm_gb
-    pi, qi = gradient_descent()
-    result = algorithm_gb(qi, pi)
-    print(ideal(qi) == ideal(result))
+    derivatives, ideal_gens = gradient_descent()
+    result = algorithm_gb(ideal_gens, derivatives)
+    print(ideal(ideal_gens) == ideal(result))
