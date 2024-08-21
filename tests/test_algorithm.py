@@ -1,6 +1,6 @@
 import pytest
 from sage.all import PolynomialRing, QQ
-from core.main import algorithm_gb, algorithm_ideal
+from core.main import _algorithm_gb, _algorithm_ideal, differential_groebner_basis
 from systems.benchmark.single import single
 from systems.benchmark.double import double
 from systems.benchmark.chem_1 import chem_1
@@ -21,8 +21,10 @@ def test_single_pendulum():
          R('y*l - 1'), 
          R('v')]
     
-    assert algorithm_gb(ideal_gens, derivatives) == result
-    assert algorithm_ideal(ideal_gens, derivatives) == result
+    assert _algorithm_gb(ideal_gens, derivatives) == result
+    assert _algorithm_ideal(ideal_gens, derivatives) == result
+    assert differential_groebner_basis(ideal_gens, derivatives, 'gb') == result
+    assert differential_groebner_basis(ideal_gens, derivatives, 'ideal') == result
 
 
 def test_simple_double_pendulum():
@@ -31,13 +33,17 @@ def test_simple_double_pendulum():
     ideal_gens, derivatives = double()
     result = [R('1')]
 
-    assert algorithm_gb(ideal_gens, derivatives) == result
-    assert algorithm_ideal(ideal_gens, derivatives) == result
+    assert _algorithm_gb(ideal_gens, derivatives) == result
+    assert _algorithm_ideal(ideal_gens, derivatives) == result
+    assert differential_groebner_basis(ideal_gens, derivatives, 'gb') == result
+    assert differential_groebner_basis(ideal_gens, derivatives, 'ideal') == result
 
 def test_chem_1():
     R = PolynomialRing(QQ, 'x1, x2, x3, x4, k1, k2, k3, T1, T2', 
                        order='degrevlex')
     ideal_gens, derivatives = chem_1()
 
-    assert algorithm_gb(ideal_gens, derivatives) == ideal_gens
-    assert algorithm_ideal(ideal_gens, derivatives) == ideal_gens
+    assert _algorithm_gb(ideal_gens, derivatives) == ideal_gens
+    assert _algorithm_ideal(ideal_gens, derivatives) == ideal_gens
+    assert differential_groebner_basis(ideal_gens, derivatives, 'gb') == ideal_gens
+    assert differential_groebner_basis(ideal_gens, derivatives, 'ideal') == ideal_gens

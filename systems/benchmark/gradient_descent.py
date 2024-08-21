@@ -24,7 +24,7 @@ def gradient_descent():
     return derivatives, constraints
 
 if __name__ == '__main__':
-    from core.main import algorithm_gb
+    from core.main import _algorithm_gb
     derivatives, ideal_gens = gradient_descent()
-    result = algorithm_gb(ideal_gens, derivatives)
+    result = _algorithm_gb(ideal_gens, derivatives)
     print(ideal(ideal_gens) == ideal(result))

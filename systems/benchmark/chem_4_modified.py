@@ -24,7 +24,7 @@ def chem_4_modified():
     return ideal_gens, derivatives
 
 if __name__ == '__main__':
-    from core.main import algorithm_gb
+    from core.main import _algorithm_gb
     ideal_gens, derivatives = chem_4_modified()
-    result = algorithm_gb(ideal_gens, derivatives)
+    result = _algorithm_gb(ideal_gens, derivatives)
     print(result)
