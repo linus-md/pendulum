@@ -7,9 +7,9 @@ This repository Pontains Python/Sage code to compute full differential ideals th
 Executing the following code
 
 ```python
-from core.main import algorithm
+from core.main import algorithm_gb
 qi, pi = single()
-result = algorithm(qi, pi)
+result = algorithm_gb(qi, pi)
 print(result)
 ```
 

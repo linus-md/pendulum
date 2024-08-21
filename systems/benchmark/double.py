@@ -17,7 +17,7 @@ def double():
     return qi, pi
 
 if __name__ == '__main__':
-    from core.main import algorithm
+    from core.main import algorithm_gb
     qi, pi = double()
-    result = algorithm(qi, pi)
+    result = algorithm_gb(qi, pi)
     print(result)

@@ -24,7 +24,7 @@ def gradient_descent():
     return derivatives, constraints
 
 if __name__ == '__main__':
-    from core.main import algorithm
+    from core.main import algorithm_gb
     pi, qi = gradient_descent()
-    result = algorithm(qi, pi)
+    result = algorithm_gb(qi, pi)
     print(ideal(qi) == ideal(result))
