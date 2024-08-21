@@ -1,3 +1,5 @@
+"""Submit a job to the cluster."""
+
 import os
 import sys
 import datetime

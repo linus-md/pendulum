@@ -1,7 +1,8 @@
-from sage.all import PolynomialRing, QQ
+from sage.all import PolynomialRing, GF
 
 def double_ll():
-    R = PolynomialRing(QQ, 'x1, y1, u1, v1, x2, y2, u2, v2, l1, l2', 
+    # See example 2.5.2 for reference
+    R = PolynomialRing(GF(101), 'x1, y1, u1, v1, x2, y2, u2, v2, l1, l2', 
                        order='degrevlex')
     pi = [R('u1'),
         R('v1'),
@@ -18,7 +19,7 @@ def double_ll():
     return qi, pi
 
 if __name__ == '__main__':
-    from core.main import algorithm
+    from core.main import algorithm_gb
     qi, pi = double_ll()
-    result = algorithm(qi, pi)
+    result = algorithm_gb(qi, pi)
     print(result)

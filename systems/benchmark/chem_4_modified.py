@@ -1,8 +1,7 @@
 from sage.all import PolynomialRing, QQ
 
-# See example 4 in 1909.13608
-
-def chem_fake():
+def chem_4_modified():
+    # See example A.1.2 for reference
     R = PolynomialRing(QQ, 'x1, x2, x3, x4, x5, x6, k1, k2, k3, k4, k5, k6', 
                        order='degrevlex')
     
@@ -25,10 +24,7 @@ def chem_fake():
     return qi, pi
 
 if __name__ == '__main__':
-    import timeit
-    from core.main import algorithm_exp
-    
-    n = 1
-    qi, pi = chem_fake()
-    execution_time = timeit.timeit(lambda: algorithm_exp(qi, pi), number=n)
-    print(execution_time/n)
+    from core.main import algorithm_gb
+    qi, pi = chem_4_modified()
+    result = algorithm_gb(qi, pi)
+    print(result)

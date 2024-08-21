@@ -1,6 +1,7 @@
 from sage.all import PolynomialRing, QQ
 
 def triple_full_g():
+      # See example 2.5.2 for reference
       vars = 'x1, y1, u1, v1, x2, y2, u2, v2, x3, y3, u3, v3, l1, l2, l3, g'
       R = PolynomialRing(QQ, vars, order='degrevlex')
 
@@ -28,7 +29,7 @@ def triple_full_g():
       return qi, pi
 
 if __name__ == '__main__':
-    from core.main import algorithm
+    from core.main import algorithm_gb
     qi, pi = triple_full_g()
-    result = algorithm(qi, pi)
+    result = algorithm_gb(qi, pi)
     print(result)

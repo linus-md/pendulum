@@ -1,6 +1,7 @@
 from sage.all import PolynomialRing, QQ
 
 def single():
+    # See example 2.5.1 for reference
     R = PolynomialRing(QQ, 'x, y, u, v, l', order='degrevlex')
     pi = [R('u'), 
           R('v'), 
@@ -12,7 +13,7 @@ def single():
     return qi, pi
 
 if __name__ == '__main__':
-    from core.main import algorithm
+    from core.main import algorithm_gb
     qi, pi = single()
-    result = algorithm(qi, pi)
+    result = algorithm_gb(qi, pi)
     print(result)

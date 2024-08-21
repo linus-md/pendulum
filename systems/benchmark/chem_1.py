@@ -1,8 +1,7 @@
 from sage.all import PolynomialRing, QQ
 
-# See example 1 in 1909.13608
-
 def chem_1():
+    # See example 2.5.4 for reference
     R = PolynomialRing(QQ, 'x1, x2, x3, x4, k1, k2, k3, T1, T2', 
                        order='degrevlex')
     pi = [R('- k1*x1 + k2*x2*x3'),    
@@ -20,8 +19,7 @@ def chem_1():
     return qi, pi
 
 if __name__ == '__main__':
-    from core.main import algorithm
-    from sage.all import ideal
+    from core.main import algorithm_gb
     qi, pi = chem_1()
-    result = algorithm(qi, pi)
+    result = algorithm_gb(qi, pi)
     print(result)
