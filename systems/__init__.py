@@ -7,8 +7,7 @@ from .hard.kepler_half import kepler_half
 
 from .benchmark.chem_1 import chem_1
 from .benchmark.chem_4 import chem_4
-from .benchmark.chem_b2 import chem_b2
-from .benchmark.chem_fake import chem_fake
+from .benchmark.chem_4_modified import chem_4_modified
 
 from .benchmark.parabola import parabola
 

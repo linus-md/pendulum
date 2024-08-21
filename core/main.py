@@ -6,7 +6,7 @@ from sage.all import ideal, set_verbose
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-def diff_op(qi, pi):
+def delta(qi, pi):
     vars = qi.parent().gens()
     return sum([pi[i] * qi.derivative(var) for i, var in enumerate(vars)])
 
@@ -19,7 +19,7 @@ def algorithm(qi, pi):
     G = ideal(qi).groebner_basis()
 
     while True:
-        qi = [diff_op(qs, pi) for qs in qi]
+        qi = [delta(qs, pi) for qs in qi]
         qi = [qs.reduce(G) for qs in qi]
 
 
@@ -44,7 +44,7 @@ def algorithm_0(qi, pi):
     logger.info(f'Iteration {i} - {start_time}')
 
     while True:
-        qi = [diff_op(qs, pi) for qs in qi]
+        qi = [delta(qs, pi) for qs in qi]
         qi = [qs.reduce(I) for qs in qi]
     
         if any(qs != 0 for qs in qi):
@@ -70,7 +70,7 @@ def algorithm_exp(qi, pi):
     G = ideal(qi).groebner_basis()
 
     while True:
-        qi = [diff_op(qs, pi) for qs in qi]
+        qi = [delta(qs, pi) for qs in qi]
         qi = [qs.reduce(G) for qs in qi]
 
         if any(qs != 0 for qs in qi):
@@ -120,7 +120,7 @@ def algorithm_gen(I, derivatives, S, R):
     return gen_alg(I, derivatives, S, R)
 
 if __name__ == '__main__':
-    from systems import chem_fake, double, single
+    from systems import chem_4_modified, double, single
     from sage.all import PolynomialRing, QQ
     import timeit
     
