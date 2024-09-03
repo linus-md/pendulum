@@ -1,9 +1,10 @@
 import re
 from tabulate import tabulate
 
+
 def parse(log):
     """
-    This function parses Singular Gröbner basis log output and saves the data 
+    This function parses Singular Gröbner basis log output and saves the data
     in a useful format. The input is a string containing the log output.
 
     The log: '''[65535:4]2(3)s(2)sss3(3)s(4)s(5)s(7)s4(9)s(11)--
@@ -34,15 +35,14 @@ def parse(log):
                 continue
             i += 1
 
-        # Adjust pos to remove consecutive elements which are part of the same number
-        pos = [pos[0]] + [pos[i] for i in range(1, len(pos)) if pos[i] - pos[i-1] != 1]
+        pos = [pos[0]]
+        pos += [pos[i] for i in range(1, len(pos)) if pos[i] - pos[i-1] != 1]
         return pos
 
     # Find substrings
     pos = find_standalone_numbers(log)
     sub_strings = [log[pos[i]:pos[i+1]] for i in range(len(pos)-1)]
     sub_strings.append(log[pos[-1]:])
-
 
     # Evalute each substring
     vals = []
