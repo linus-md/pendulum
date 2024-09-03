@@ -5,10 +5,11 @@ import sys
 import datetime
 import subprocess
 
+
 def create_and_run_sh(filename):
     time = datetime.datetime.now().strftime("%M%S")
     script_path = f'slurm_{time}.sh'
- 
+
     script_content = f"""#!/bin/bash --login
 #SBATCH --job-name={filename.split('/')[-1][:-3]}_{time}
 #SBATCH --output=logs/{filename.split('/')[-1][:-3]}_{time}.out
@@ -36,6 +37,7 @@ time python {filename}
         print(f"Script failed with exit code {e.returncode}")
     finally:
         os.remove(full_script_path)
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

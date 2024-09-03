@@ -4,11 +4,12 @@ from sage.rings.ideal import Ideal as ideal
 from sage.modules.free_module_element import vector
 from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing
 
-def gradient_descent():
+
+def linear_nn_2():
     # See example 2.5.7 for reference
     R = PolynomialRing(
-        QQ, [f'a{i}{j} ' for i in range(1, 3) for j in range(1, 3)] \
-        + [f'b{i}{j} ' for i in range(1, 3) for j in range(1, 3)] \
+        QQ, [f'a{i}{j} ' for i in range(1, 3) for j in range(1, 3)]
+        + [f'b{i}{j} ' for i in range(1, 3) for j in range(1, 3)]
         + ['x1', 'x2', 'y1', 'y2'],
         order='degrevlex')
 
@@ -27,8 +28,9 @@ def gradient_descent():
 
     return derivatives, constraints
 
+
 if __name__ == '__main__':
     from core.main import _algorithm_gb
-    derivatives, ideal_gens = gradient_descent()
+    derivatives, ideal_gens = linear_nn_2()
     result = _algorithm_gb(ideal_gens, derivatives)
     print(ideal(ideal_gens) == ideal(result))

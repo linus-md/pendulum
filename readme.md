@@ -7,10 +7,10 @@ This repository Pontains Python/Sage code to compute full differential ideals th
 Executing the following code
 
 ```python
-from core.main import algorithm_gb
-from systems.benchmark import single
-qi, pi = single()
-result = differential_groebner_basis(qi, pi)
+from core.main import differential_groebner_basis
+from systems.benchmark import simple_pendulum
+ideal_gen, derivatives = simple_pendulum()
+result = differential_groebner_basis(ideal_gen, derivatives, algorithm='ideal')
 print(result)
 ```
 
