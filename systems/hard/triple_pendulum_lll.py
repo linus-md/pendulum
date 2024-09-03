@@ -2,25 +2,24 @@ from sage.rings.rational_field import QQ
 from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing
 
 
-def triple_full_g():
+def triple_pendulum_lll():
     # See example 2.5.2 for reference
-    vars = 'x1, y1, u1, v1, x2, y2, u2, v2, x3, y3, u3, v3, l1, l2, l3, g'
+    vars = 'x1, y1, u1, v1, x2, y2, u2, v2, x3, y3, u3, v3, l1, l2, l3'
     R = PolynomialRing(QQ, vars, order='degrevlex')
 
     derivatives = [
         R('u1'),
         R('v1'),
         R('- l1*x1 - l2*(x1 - x2)'),
-        R('- l1*y1 - l2*(y1 - y2) - g'),
+        R('- l1*y1 - l2*(y1 - y2) - 1'),
         R('u2'),
         R('v2'),
         R('- l2*(x2 - x1) - l3*(x2 - x3)'),
-        R('- l2*(y2 - y1) - l3*(y2 - y3) - g'),
+        R('- l2*(y2 - y1) - l3*(y2 - y3) - 1'),
         R('u3'),
         R('v3'),
         R('- l3*(x3 - x2)'),
-        R('- l3*(y3 - y2) - g'),
-        R('0'),
+        R('- l3*(y3 - y2) - 1'),
         R('0'),
         R('0'),
         R('0')]
@@ -35,6 +34,6 @@ def triple_full_g():
 
 if __name__ == '__main__':
     from core.main import _algorithm_gb
-    ideal_gens, derivatives = triple_full_g()
+    ideal_gens, derivatives = triple_pendulum_lll()
     result = _algorithm_gb(ideal_gens, derivatives)
     print(result)
