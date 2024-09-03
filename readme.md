@@ -8,8 +8,8 @@ Executing the following code
 
 ```python
 from core.main import algorithm_gb
-from systems.benchmark import single
-qi, pi = single()
+from systems.benchmark import simple_pendulum
+qi, pi = simple_pendulum()
 result = differential_groebner_basis(qi, pi)
 print(result)
 ```

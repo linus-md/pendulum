@@ -35,8 +35,7 @@ def parse(log):
                 continue
             i += 1
 
-        pos = [pos[0]]
-        pos += [pos[i] for i in range(1, len(pos)) if pos[i] - pos[i-1] != 1]
+        pos = [pos[0]] + [pos[i] for i in range(1, len(pos)) if pos[i] - pos[i-1] != 1]
         return pos
 
     # Find substrings

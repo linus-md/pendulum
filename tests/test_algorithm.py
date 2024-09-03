@@ -5,14 +5,14 @@ from sage.rings.rational_field import QQ
 from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing
 
 from core.main import _algorithm_gb, _algorithm_ideal, differential_groebner_basis
-from systems.benchmark.single import single
-from systems.benchmark.double import double
+from systems.benchmark.simple_pendulum import simple_pendulum
+from systems.benchmark.double_pendulum import double_pendulum
 from systems.benchmark.chem_1 import chem_1
 
 
-def test_single_pendulum():
+def test_simple_pendulum_pendulum():
     R = PolynomialRing(QQ, 'x, y, u, v, l', order='degrevlex')
-    ideal_gens, derivatives = single()
+    ideal_gens, derivatives = simple_pendulum()
 
     result = [
          R('x*l^2 - x'),
@@ -36,7 +36,7 @@ def test_single_pendulum():
 def test_simple_double_pendulum():
     R = PolynomialRing(QQ, 'x1, y1, u1, v1, x2, y2, u2, v2',
                        order='degrevlex')
-    ideal_gens, derivatives = double()
+    ideal_gens, derivatives = double_pendulum()
     result = [R('1')]
 
     assert _algorithm_gb(ideal_gens, derivatives) == result
